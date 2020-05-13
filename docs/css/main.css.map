@@ -1,0 +1,20 @@
+{
+    "version": 3,
+    "mappings": "AGAA,AAAA,CAAC;AACD,CAAC,AAAA,OAAO;AACR,CAAC,AAAA,MAAM,CAAC;EACN,OAAO,EAAE,CAAC;EACV,MAAM,EAAE,CAAC;EACT,UAAU,EAAE,UAAU;CACvB",
+    "sources": [
+        "../../scss/main.scss",
+        "../../scss/abstracts/_variables.scss",
+        "../../scss/abstracts/_mixins.scss",
+        "../../scss/base/_reset.scss",
+        "../../scss/base/_typography.scss",
+        "../../scss/base/_utilities.scss",
+        "../../scss/layout/_navigation.scss",
+        "../../scss/layout/_home.scss",
+        "../../scss/layout/_about.scss",
+        "../../scss/layout/_gallery.scss",
+        "../../scss/layout/_contact.scss",
+        "../../scss/layout/_footer.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
