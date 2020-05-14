@@ -5,8 +5,8 @@
   align-items: center;  
 }
 
-@mixin transition {
-  transition: all .5s ease-in;
+@mixin transition($property) {
+  transition: $property .5s ease-in;
 }
 
 @mixin media-md {

@@ -7,10 +7,15 @@
   <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-  <header>
+  <header id="js-menu">
     <nav>
+      <span class="nav__toggle" id="js-navbar-toggle">
+        <img src="./img/menu-open.svg" alt="Icon menu open" id="js-menu-icon">
+      </span>
       <div class="nav__logo">
-        <img src="./img/camera.svg" alt="Camera logo">      
+        <a href="./index.html">
+          <img src="./img/camera.svg" alt="Camera logo"> 
+        </a>
       </div>
       <h2>CaptureD</h2>
       <ul class="nav__list">
@@ -23,22 +28,22 @@
       <h3>Follow Us Here!</h3>
       <ul class="nav__list-social">
         <li>
-          <a href="https://www.facebook.com/" target="_blank" noreferer noopener class="nav__link-social">
+          <a href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener" class="nav__link-social">
             <img src="./img/facebook.svg" alt="Facebook logo">
           </a>
         </li>
         <li>
-          <a href="https://www.twitter.com/" target="_blank" noreferer noopener class="nav__link-social">
+          <a href="https://www.twitter.com/" target="_blank" rel="noreferrer noopener" class="nav__link-social">
             <img src="./img/twitter.svg" alt="Twitter logo">
           </a>
         </li>
         <li>
-          <a href="https://www.instagram.com/" target="_blank" noreferer noopener class="nav__link-social">
+          <a href="https://www.instagram.com/" target="_blank" rel="noreferrer noopener" class="nav__link-social">
             <img src="./img/instagram.svg" alt="Instagram logo">
           </a>
         </li>
         <li>
-          <a href="https://www.linkedin.com/" target="_blank" noreferer noopener class="nav__link-social">
+          <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer noopener" class="nav__link-social">
             <img src="./img/linkedin.svg" alt="Linkedin logo">
           </a>
         </li>
@@ -50,6 +55,6 @@
   <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a
       href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
 
-     
+    <script src="./js/main.js"></script>
 </body>
 </html>
