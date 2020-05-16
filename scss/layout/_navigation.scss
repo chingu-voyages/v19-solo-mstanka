@@ -1,11 +1,8 @@
-header {
-  max-width: 25rem;
-  height: 90vh;
-  background: $neutral-light;
-  text-align: center;
-  @include flex(column, space-around);
-  border: 1px solid black;
-  transform: translateX(-25rem);
+header {  
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
 
   .nav__logo {
     width: 8rem;
@@ -108,14 +105,26 @@ header {
   .nav__toggle {
     position: absolute;
     top: 1.5rem;
-    right: -3rem; 
-    height: 2rem;
-    width: 2rem;
+    left: 1.5rem;
+    height: 2.5rem;
+    width: 2.5rem;
     cursor: pointer;
+    z-index: 2;
   }
+}
+.header__container {
+  @include flex(column, space-around);
+  border: 1px solid black;
+  max-width: 25rem;
+  height: 100vh;
+  background: $neutral-light;
+  text-align: center;
+  transform: translateX(-25rem);
+  position: relative;
+  padding: 0 2rem;
 }
 
 .active {
-  transform: translateX(0);
+  transform: translateX(0);  
 }
 

@@ -8,10 +8,8 @@ navToggle.addEventListener("click", () => {
   if (mainNav.classList.contains("active")) {
     menuIcon.removeAttribute("src", "img/menu-open.svg");
     menuIcon.setAttribute("src", "img/menu-close.svg");
-    navToggle.style.right = "2rem";
   } else {
     menuIcon.removeAttribute("src", "img/menu-close.svg");
     menuIcon.setAttribute("src", "img/menu-open.svg");
-    navToggle.style.right = "-3rem";
   }
 });

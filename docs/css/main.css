@@ -24,6 +24,7 @@ body {
   font-size: 1.6rem;
   color: #a7a9be;
   line-height: 1.6;
+  z-index: 0;
 }
 
 a {
@@ -35,26 +36,15 @@ li {
   list-style-type: none;
 }
 
+img {
+  width: 100%;
+}
+
 header {
-  max-width: 25rem;
-  height: 90vh;
-  background: #fffffe;
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border: 1px solid black;
-  -webkit-transform: translateX(-25rem);
-          transform: translateX(-25rem);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 
 header .nav__logo {
@@ -177,14 +167,71 @@ header .nav__link-social img {
 header .nav__toggle {
   position: absolute;
   top: 1.5rem;
-  right: -3rem;
-  height: 2rem;
-  width: 2rem;
+  left: 1.5rem;
+  height: 2.5rem;
+  width: 2.5rem;
   cursor: pointer;
+  z-index: 2;
+}
+
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid black;
+  max-width: 25rem;
+  height: 100vh;
+  background: #fffffe;
+  text-align: center;
+  -webkit-transform: translateX(-25rem);
+          transform: translateX(-25rem);
+  position: relative;
+  padding: 0 2rem;
 }
 
 .active {
   -webkit-transform: translateX(0);
           transform: translateX(0);
+}
+
+.intro__section {
+  background: #f25f4c;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.intro__section .intro__title {
+  font-size: 5rem;
+  letter-spacing: .1rem;
+  line-height: 1.2;
+}
+
+.intro__section .intro__lead {
+  margin-bottom: 3rem;
+}
+
+.intro__section .intro__img {
+  width: 80%;
 }
 /*# sourceMappingURL=main.css.map */

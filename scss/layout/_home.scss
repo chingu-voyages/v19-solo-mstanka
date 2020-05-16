@@ -1,0 +1,19 @@
+.intro__section {
+  background: $primary-color;
+  height: 100vh;
+  @include flex(column, center);
+
+  .intro__title {    
+      font-size: 5rem;
+      letter-spacing: .1rem;
+      line-height: 1.2;
+    }
+
+  .intro__lead {
+    margin-bottom: 3rem;
+  }
+
+  .intro__img {
+    width: 80%;
+  } 
+}

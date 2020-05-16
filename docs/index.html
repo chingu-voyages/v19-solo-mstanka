@@ -7,54 +7,69 @@
   <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-  <header id="js-menu">
-    <nav>
-      <span class="nav__toggle" id="js-navbar-toggle">
-        <img src="./img/menu-open.svg" alt="Icon menu open" id="js-menu-icon">
-      </span>
-      <div class="nav__logo">
-        <a href="./index.html">
-          <img src="./img/camera.svg" alt="Camera logo"> 
-        </a>
+  <!--*************Navigation***************-->
+  <header>
+    <span class="nav__toggle" id="js-navbar-toggle">
+      <img src="./img/menu-open.svg" alt="Icon menu open" id="js-menu-icon">
+    </span>
+    <div class="header__container" id="js-menu">
+      <nav>
+        <div class="nav__logo">
+          <a href="./index.html">
+            <img src="./img/camera.svg" alt="Camera logo">
+          </a>
+        </div>
+        <h2>CaptureD</h2>
+        <ul class="nav__list">
+          <li><a href="./about.html" class="nav__link">About</a></li>
+          <li><a href="./gallery.html" class="nav__link">Gallery</a></li>
+          <li><a href="./contact.html" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h3>Follow Us Here!</h3>
+        <ul class="nav__list-social">
+          <li>
+            <a href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener" class="nav__link-social">
+              <img src="./img/facebook.svg" alt="Facebook logo">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com/" target="_blank" rel="noreferrer noopener" class="nav__link-social">
+              <img src="./img/twitter.svg" alt="Twitter logo">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/" target="_blank" rel="noreferrer noopener" class="nav__link-social">
+              <img src="./img/instagram.svg" alt="Instagram logo">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer noopener" class="nav__link-social">
+              <img src="./img/linkedin.svg" alt="Linkedin logo">
+            </a>
+          </li>
+        </ul>
       </div>
-      <h2>CaptureD</h2>
-      <ul class="nav__list">
-        <li><a href="./about.html" class="nav__link">About</a></li>
-        <li><a href="./gallery.html" class="nav__link">Gallery</a></li>
-        <li><a href="./contact.html" class="nav__link">Contact</a></li>       
-      </ul>
-    </nav> 
-    <div>
-      <h3>Follow Us Here!</h3>
-      <ul class="nav__list-social">
-        <li>
-          <a href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener" class="nav__link-social">
-            <img src="./img/facebook.svg" alt="Facebook logo">
-          </a>
-        </li>
-        <li>
-          <a href="https://www.twitter.com/" target="_blank" rel="noreferrer noopener" class="nav__link-social">
-            <img src="./img/twitter.svg" alt="Twitter logo">
-          </a>
-        </li>
-        <li>
-          <a href="https://www.instagram.com/" target="_blank" rel="noreferrer noopener" class="nav__link-social">
-            <img src="./img/instagram.svg" alt="Instagram logo">
-          </a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer noopener" class="nav__link-social">
-            <img src="./img/linkedin.svg" alt="Linkedin logo">
-          </a>
-        </li>
-      </ul>
     </div>    
   </header>
 
-  
-  <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a
-      href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+  <!--*************Home***************-->
+  <main>
+    <section id="intro" class="intro__section">     
+      <h1 class="intro__title">CaptureD</h1>
+      <h2 class="intro__lead">Photography Studio</h2>
+      <img src="img/camera.svg" alt="Camera" class="intro__img">  
+    </section> 
+  </main>
 
-    <script src="./js/main.js"></script>
+  <!--*************Footer***************-->
+  <footer>
+
+    <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    
+  </footer>  
+
+  <script src="./js/main.js"></script>
 </body>
 </html>
