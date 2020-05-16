@@ -1,0 +1,28 @@
+.footer__container {
+  background: $neutral-dark;
+  color: $neutral-light;
+  padding: 4rem 1rem;  
+
+  h3 {
+    padding: 0 .5rem;
+  }
+}
+
+.footer__contact {
+  margin: 4rem 0;
+
+  ion-icon {
+    font-size: 2.5rem;
+    color: $primary-color;
+    padding: 0 .5rem;
+  }  
+}
+
+.footer__attribution {
+  border-top: 1px solid $neutral;
+  padding: 3rem 0;
+}
+
+footer a {
+  color: $neutral;
+}
