@@ -4,13 +4,15 @@
   @include flex(column, center);
 
   .intro__title {    
-      font-size: 5rem;
-      letter-spacing: .1rem;
-      line-height: 1.2;
-    }
+    font-size: 6rem;
+    letter-spacing: .1rem;
+    line-height: 1.2;
+    color: $neutral-light;
+  }
 
   .intro__lead {
     margin-bottom: 3rem;
+    color: $neutral-dark;
   }
 
   .intro__img {

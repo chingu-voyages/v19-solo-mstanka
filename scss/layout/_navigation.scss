@@ -10,11 +10,7 @@ header {
 
     &:hover {
       transform: scale(.95);
-    }
-
-    img {
-      width: 100%;      
-    }   
+    }  
   }
 
   h2 {
@@ -86,7 +82,7 @@ header {
       display: block;
       padding: 1rem;
       margin: .5rem;     
-      background: $primary-color;
+      background: $primary-light;
       border-radius: 50%;
       box-shadow: 1px 1px 2px;
       @include transition(background-color);
@@ -114,7 +110,6 @@ header {
 }
 .header__container {
   @include flex(column, space-around);
-  border: 1px solid black;
   max-width: 25rem;
   height: 100vh;
   background: $neutral-light;
