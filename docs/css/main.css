@@ -231,4 +231,33 @@ header .nav__toggle {
 .intro__section .intro__img {
   width: 80%;
 }
+
+.footer__container {
+  background: #0f0e17;
+  color: #fffffe;
+  padding: 4rem 1rem;
+}
+
+.footer__container h3 {
+  padding: 0 .5rem;
+}
+
+.footer__contact {
+  margin: 4rem 0;
+}
+
+.footer__contact ion-icon {
+  font-size: 2.5rem;
+  color: #f25f4c;
+  padding: 0 .5rem;
+}
+
+.footer__attribution {
+  border-top: 1px solid #6c6d79;
+  padding: 3rem 0;
+}
+
+footer a {
+  color: #6c6d79;
+}
 /*# sourceMappingURL=main.css.map */
