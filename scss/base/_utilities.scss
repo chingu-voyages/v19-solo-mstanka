@@ -8,7 +8,18 @@ body {
   font-size: 1.6rem;
   color: $neutral;
   line-height: 1.6;
-  z-index: 0;
+  max-width: $max-width;
+  margin: 0 auto;  
+}
+
+.body__container {
+  display: grid;
+  grid-template-rows: min-content;
+  grid-template-columns: 1fr;
+ 
+  @include media-lg {
+    grid-template-columns: minmax(20vw, 30rem) repeat(2, 1fr);    
+  }  
 }
 
 a {
