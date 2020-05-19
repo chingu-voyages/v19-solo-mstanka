@@ -3,9 +3,152 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Captured || About</title>
+  <link rel="stylesheet" href="./css/main.css">
 </head>
-<body>
-  About page
+<body class="body__container">
+  <!--*************Navigation***************-->
+  <header>
+    <span class="nav__toggle" id="js-navbar-toggle">
+      <img src="./img/menu-open.svg" alt="Icon menu open" id="js-menu-icon">
+    </span>
+    <div class="header__container" id="js-menu">
+      <nav>
+        <div class="nav__logo">
+          <a href="./index.html">
+            <img src="./img/camera.svg" alt="Camera logo">
+          </a>
+        </div>
+        <h2>CaptureD</h2>
+        <ul class="nav__list">
+          <li><a href="./about.html" class="nav__link">About</a></li>
+          <li><a href="./gallery.html" class="nav__link">Gallery</a></li>
+          <li><a href="./contact.html" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h3>Follow Us Here!</h3>
+        <ul class="nav__list-social">
+          <li>
+            <a href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener" class="nav__link-social">
+              <img src="./img/facebook.svg" alt="Facebook logo">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com/" target="_blank" rel="noreferrer noopener" class="nav__link-social">
+              <img src="./img/twitter.svg" alt="Twitter logo">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/" target="_blank" rel="noreferrer noopener" class="nav__link-social">
+              <img src="./img/instagram.svg" alt="Instagram logo">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer noopener" class="nav__link-social">
+              <img src="./img/linkedin.svg" alt="Linkedin logo">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+<!--*************About***************-->
+<main class="main__container">
+  <!--*************About Intro***************-->
+  <section id="about" class="about__intro">
+    <h1>About Us</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem eius assumenda corporis dignissimos culpa maiores mollitia! Repellendus, deserunt tempore! Aspernatur repudiandae blanditiis nostrum temporibus est nihil omnis nulla voluptatibus neque?</p>
+  </section>
+  <!--*************About Team***************-->
+  <section class="about__team">
+    <div class="about__img">
+      <img src="./img/about-main.jpg" alt="Photographer taking photo">
+    </div>
+    <div class="about__text">
+      <h2>Meet Our Team</h2>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia officia in laboriosam amet adipisci. Amet accusamus possimus!</p>
+      <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, reprehenderit.</P>
+    </div>     
+  </section>
+  <!--*************About - Cards***************-->
+  <section class="about__cards">
+    <div class="about__card">
+      <div class="about__card-img">
+        <img src="./img/about-1-lg.jpg" alt="Photographer-1">
+      </div>
+      <div class="about__card-text">
+        <h3 class="about__card-name">John Doe</h3>
+        <h4 class="about__card-title">Lead Photographer</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit nam praesentium quibusdam quaerat expedita laudantium, sint dolorem iure velit sunt.</p>
+      </div>     
+    </div>
+
+    <div class="about__card">
+      <div class="about__card-img">
+        <img src="./img/about-2-lg.jpg" alt="Photographer-2">
+      </div>
+      <div class="about__card-text">
+        <h3 class="about__card-name">Jenny Smith</h3>
+        <h4 class="about__card-title">Photographer</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit nam praesentium quibusdam quaerat expedita
+          laudantium, sint dolorem iure velit sunt.</p>
+      </div>
+    </div>
+
+    <div class="about__card">
+      <div class="about__card-img">
+        <img src="./img/about-3-lg.jpg" alt="Photographer-3">
+      </div>
+      <div class="about__card-text">
+        <h3 class="about__card-name">Mark Dough</h3>
+        <h4 class="about__card-title">Senior Photographer</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque impedit tenetur aspernatur labore veritatis repellat placeat nemo tempore facilis magni?</p>
+      </div>
+    </div>
+
+    <div class="about__card">
+      <div class="about__card-img">
+        <img src="./img/about-4-lg.jpg" alt="Photographer-4">
+      </div>
+      <div class="about__card-text">
+        <h3 class="about__card-name">Karla Novak</h3>
+        <h4 class="about__card-title">Photographer</h4>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolor dolores doloribus quas optio illum beatae ratione, rerum illo quibusdam.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!--*************Footer***************-->
+<footer class="footer__container">
+  <h3>Feel Free to Contact Us!</h3>
+
+  <ul class="footer__contact">
+    <li>
+      <ion-icon name="location-outline"></ion-icon> 203 Fake St. Mountain View, Main City, Europe
+    </li>
+    <li>
+      <ion-icon name="mail-outline"></ion-icon> info@captured.com
+    </li>
+    <li>
+      <ion-icon name="call-outline"></ion-icon> +123 456 789
+    </li>
+  </ul>
+
+  <div class="footer__attribution">
+    <p>Copyright &copy 2020 All rights reserved</p>
+    <p>Coded with <ion-icon name="heart"></ion-icon> by <a href="https://github.com/mstanka" target="_blank"
+        rel="noreferrer noopener">mstanka </a>for <a href="https://www.chingu.io/" target="_blank"
+        rel="noreferrer noopener">Chingu</a></p>    
+    <p>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a
+        href="https://www.flaticon.com/" rel="noreferrer noopener" title="Flaticon">www.flaticon.com</a></p>
+  </div>
+
+</footer>
+
+<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+<script src="./js/main.js"></script>
 </body>
+
 </html>

@@ -9,6 +9,12 @@
   transition: $property .5s ease-in;
 }
 
+@mixin media-sm {
+  @media screen and (min-width: 500px) {
+    @content;
+  }
+}
+
 @mixin media-md {
   @media screen and (min-width: 768px) {
     @content;

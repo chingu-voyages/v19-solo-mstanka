@@ -145,23 +145,20 @@ header {
 }
 
 .header__container {
-  @include flex(column, space-around);
+  @include flex(column, space-between);
   max-width: 25rem;
-  height: 100vh;
+  height: 100%;
   background: $neutral-light;
   text-align: center;
   transform: translateX(-25rem);
   position: relative;
   padding: 0 2rem;
 
-  @include media-hg {    
-    max-height: 70rem;
-  }
-
+ 
   @include media-lg {
-    max-width: 30rem;
+    max-width: 30rem;      
     transform: translateX(0);
-    padding: 10rem 2rem; 
+    padding: 2rem; 
     margin: 0 auto;   
   }
 }
