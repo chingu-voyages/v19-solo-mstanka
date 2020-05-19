@@ -2,11 +2,29 @@ header {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 1;  
+  
+  @include media-lg {
+    position: relative;  
+    grid-row: 1 / 2; 
+    grid-column: 1 / 2;    
+  }
+
+  nav {
+    padding-top: 3rem;
+
+    @include media-lg {
+      padding-top: 8rem;
+    }
+  }
 
   .nav__logo {
     width: 8rem;
     margin: 0 auto;
+
+    @include media-lg {
+      width: 12rem;
+    }
 
     &:hover {
       transform: scale(.95);
@@ -15,19 +33,31 @@ header {
 
   h2 {
     padding-bottom: 1rem;
-    font-size: 2.7rem;
+    font-size: 2.5rem;
     font-weight: 700;
+
+    @include media-lg {
+      font-size: 3.5rem;
+    }
   }
 
   .nav__list {
-    margin: 2rem 0;    
+    margin: 2rem 0; 
+    
+    @include media-lg {
+      margin: 6rem 0;
+    }
 
     li {
       padding: .5rem 1.5rem; 
       margin: .5rem auto;
       font-size: 2rem;      
       border-radius: 10px;       
-      @include transition(background-color);  
+      @include transition(background-color); 
+      
+      @include media-lg {
+        font-size: 3rem;
+      }
     }
   }
 
@@ -77,6 +107,7 @@ header {
 
   .nav__list-social {
     @include flex(row, center);
+    padding: 2rem 0;
 
     li {
       display: block;
@@ -106,8 +137,13 @@ header {
     width: 2.5rem;
     cursor: pointer;
     z-index: 2;
+
+    @include media-lg {
+      display: none;
+    }
   }
 }
+
 .header__container {
   @include flex(column, space-around);
   max-width: 25rem;
@@ -117,6 +153,17 @@ header {
   transform: translateX(-25rem);
   position: relative;
   padding: 0 2rem;
+
+  @include media-hg {    
+    max-height: 70rem;
+  }
+
+  @include media-lg {
+    max-width: 30rem;
+    transform: translateX(0);
+    padding: 10rem 2rem; 
+    margin: 0 auto;   
+  }
 }
 
 .active {

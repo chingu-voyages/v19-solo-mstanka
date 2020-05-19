@@ -20,3 +20,9 @@
     @content;
   }
 }
+
+@mixin media-hg {
+  @media screen and (min-height: 700px) {
+    @content;
+  }
+}
