@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
 *,
 *:before,
 *:after {
@@ -64,10 +65,31 @@ p {
 
 h1, h2 {
   padding: 1rem 0;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2.7rem;
+}
+
+@media screen and (min-width: 1024px) {
+  h1 {
+    font-size: 3.2rem;
+  }
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+@media screen and (min-width: 1024px) {
+  h2 {
+    font-size: 3rem;
+  }
 }
 
 header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 1;
@@ -111,18 +133,6 @@ header .nav__logo:hover {
           transform: scale(0.95);
 }
 
-header h2 {
-  padding-bottom: 1rem;
-  font-size: 2.5rem;
-  font-weight: 700;
-}
-
-@media screen and (min-width: 1024px) {
-  header h2 {
-    font-size: 3.5rem;
-  }
-}
-
 header .nav__list {
   margin: 2rem 0;
 }
@@ -144,17 +154,22 @@ header .nav__list li {
 
 @media screen and (min-width: 1024px) {
   header .nav__list li {
-    font-size: 3rem;
+    font-size: 2.7rem;
   }
 }
 
 header .nav__link {
-  display: block;
   color: #6c6d79;
   font-weight: 700;
   position: relative;
   display: inline-block;
   padding-bottom: .3rem;
+}
+
+@media screen and (min-width: 1024px) {
+  header .nav__link {
+    color: #fffffe;
+  }
 }
 
 header .nav__link::before, header .nav__link::after {
@@ -168,6 +183,12 @@ header .nav__link::before, header .nav__link::after {
           transform: scaleX(0);
   -webkit-transition: all 0.5s ease-in;
   transition: all 0.5s ease-in;
+}
+
+@media screen and (min-width: 1024px) {
+  header .nav__link::before, header .nav__link::after {
+    background-color: #0f0e17;
+  }
 }
 
 header .nav__link::after {
@@ -216,16 +237,28 @@ header .nav__list-social li {
   display: block;
   padding: 1rem;
   margin: .5rem;
-  background: #FF7A69;
+  background-color: #FF7A69;
   border-radius: 50%;
-  -webkit-box-shadow: 1px 1px 2px;
-          box-shadow: 1px 1px 2px;
+  -webkit-box-shadow: 1px 1px 2px #A63223;
+          box-shadow: 1px 1px 2px #A63223;
   -webkit-transition: background-color 0.5s ease-in;
   transition: background-color 0.5s ease-in;
 }
 
+@media screen and (min-width: 1024px) {
+  header .nav__list-social li {
+    background-color: #fffffe;
+  }
+}
+
 header .nav__list-social li:hover {
   background-color: #fffffe;
+}
+
+@media screen and (min-width: 1024px) {
+  header .nav__list-social li:hover {
+    background-color: #A63223;
+  }
 }
 
 header .nav__link-social img {
@@ -234,7 +267,7 @@ header .nav__link-social img {
 }
 
 header .nav__toggle {
-  position: absolute;
+  position: fixed;
   top: 1.5rem;
   left: 1.5rem;
   height: 2.5rem;
@@ -280,6 +313,9 @@ header .nav__toggle {
             transform: translateX(0);
     padding: 2rem;
     margin: 0 auto;
+    background: -webkit-gradient(linear, left top, right bottom, from(#f25f4c), to(#A63223));
+    background: linear-gradient(top left, #f25f4c, #A63223);
+    color: #fffffe;
   }
 }
 
@@ -317,6 +353,12 @@ header .nav__toggle {
           align-items: center;
 }
 
+@media screen and (min-width: 1024px) {
+  .intro__section {
+    background: radial-gradient(#fffffe, #6c6d79);
+  }
+}
+
 .intro__section .intro__title {
   font-size: 4rem;
   letter-spacing: .1rem;
@@ -331,8 +373,10 @@ header .nav__toggle {
 }
 
 .intro__section .intro__lead {
-  margin-bottom: 3rem;
   color: #0f0e17;
+  text-align: center;
+  margin-bottom: 5rem;
+  padding: 0 2rem;
 }
 
 .intro__section .intro__img {
@@ -349,7 +393,7 @@ header .nav__toggle {
   background: #fffffe;
   padding-bottom: 5rem;
   position: relative;
-  overflow: hidden;
+  overflow: scroll;
 }
 
 .about__team .about__img {
@@ -376,6 +420,7 @@ header .nav__toggle {
   gap: 2rem;
   padding: 2rem;
   max-width: 120rem;
+  margin: 10rem auto;
 }
 
 @media screen and (min-width: 500px) {

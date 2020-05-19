@@ -41,4 +41,21 @@ p {
 
 h1, h2 {
   padding: 1rem 0;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2.7rem;
+
+  @include media-lg {
+    font-size: 3.2rem;
+  }
+}
+
+h2 {
+  font-size: 2.5rem;
+
+  @include media-lg {
+    font-size: 3rem;
+  }
 }

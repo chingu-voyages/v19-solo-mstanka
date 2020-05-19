@@ -7,7 +7,7 @@
   background: $neutral-light;
   padding-bottom: 5rem;
   position: relative;
-  overflow: hidden;
+  overflow: scroll;
 
   .about__img {
     max-width: 70%;
@@ -31,6 +31,7 @@
   gap: 2rem;
   padding: 2rem;
   max-width: 120rem;
+  margin: 10rem auto;
 
   @include media-sm {
     grid-template-columns: repeat(2, 1fr);
@@ -45,13 +46,6 @@
     box-shadow: 1px 1px 3px $neutral;
     border-radius: 10px;
     overflow: hidden; 
-
-    // .about__card-img {
-            
-    //   img {
-    //     width: 100%;
-    //   }
-    // }
 
     .about__card-text {
      background: $neutral-light;
