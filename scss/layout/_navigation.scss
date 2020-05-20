@@ -18,6 +18,10 @@ header {
     }
   }
 
+  h2 {
+    color: $neutral-dark;
+  }
+
   .nav__logo {
     width: 8rem;
     margin: 0 auto;
@@ -160,11 +164,11 @@ header {
   padding: 0 2rem;
  
   @include media-lg {
-    max-width: 30rem;      
+    max-width: 40rem;      
     transform: translateX(0);
     padding: 2rem; 
     margin: 0 auto;
-    background: linear-gradient(top left, $primary-color, $primary-dark);
+    background: linear-gradient(to bottom right, $primary-color, $primary-dark);
     color: $neutral-light;
   }
 }

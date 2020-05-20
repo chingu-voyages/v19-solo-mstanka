@@ -117,6 +117,10 @@ header nav {
   }
 }
 
+header h2 {
+  color: #0f0e17;
+}
+
 header .nav__logo {
   width: 8rem;
   margin: 0 auto;
@@ -308,13 +312,13 @@ header .nav__toggle {
 
 @media screen and (min-width: 1024px) {
   .header__container {
-    max-width: 30rem;
+    max-width: 40rem;
     -webkit-transform: translateX(0);
             transform: translateX(0);
     padding: 2rem;
     margin: 0 auto;
     background: -webkit-gradient(linear, left top, right bottom, from(#f25f4c), to(#A63223));
-    background: linear-gradient(top left, #f25f4c, #A63223);
+    background: linear-gradient(to bottom right, #f25f4c, #A63223);
     color: #fffffe;
   }
 }
@@ -396,20 +400,32 @@ header .nav__toggle {
   overflow: scroll;
 }
 
+@media screen and (min-width: 768px) {
+  .about__team {
+    overflow: hidden;
+  }
+}
+
 .about__team .about__img {
-  max-width: 70%;
-  margin-left: -6rem;
+  max-width: 60%;
+  margin-left: -10rem;
 }
 
 .about__team .about__text {
   background: -webkit-gradient(linear, left top, right bottom, from(#f25f4c), to(#A63223));
-  background: linear-gradient(top left, #f25f4c, #A63223);
+  background: linear-gradient(to bottom right, #f25f4c, #A63223);
   color: #fffffe;
   padding: 2rem;
   position: absolute;
-  max-width: 60%;
+  max-width: 70%;
   top: 4rem;
   right: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .about__team .about__text {
+    max-width: 60%;
+  }
 }
 
 .about__cards {

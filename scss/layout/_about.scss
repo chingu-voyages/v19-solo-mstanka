@@ -9,19 +9,27 @@
   position: relative;
   overflow: scroll;
 
+  @include media-md {
+    overflow: hidden;
+  }
+
   .about__img {
-    max-width: 70%;
-    margin-left: -6rem; 
+    max-width: 60%;
+    margin-left: -10rem; 
   }
 
   .about__text {
-    background: linear-gradient(top left, $primary-color, $primary-dark);
+    background: linear-gradient(to bottom right, $primary-color, $primary-dark);
     color: $neutral-light;
     padding: 2rem;    
     position: absolute;
-    max-width: 60%;
+    max-width: 70%;
     top: 4rem;
     right: 1rem;  
+
+    @include media-md {
+      max-width: 60%;
+    }
   }
 }
 
