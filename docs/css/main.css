@@ -471,20 +471,30 @@ header .nav__toggle {
           box-shadow: 1px 1px 3px #6c6d79;
   border-radius: 10px;
   overflow: hidden;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 0.5s ease-in;
+  transition: -webkit-transform 0.5s ease-in;
+  transition: transform 0.5s ease-in;
+  transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
 }
 
-.about__cards .about__card .about__card-text {
+.about__cards .about__card:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+.about__cards .about__card-text {
   background: #fffffe;
   padding: 1rem;
   line-height: 1.4;
 }
 
-.about__cards .about__card .about__card-text .about__card-name {
+.about__cards .about__card-name {
   color: #0f0e17;
   padding-top: 1rem;
 }
 
-.about__cards .about__card .about__card-text .about__card-title {
+.about__cards .about__card-title {
   color: #0f0e17;
   text-transform: uppercase;
   padding-bottom: 1rem;

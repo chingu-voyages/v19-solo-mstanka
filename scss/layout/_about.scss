@@ -54,22 +54,28 @@
     box-shadow: 1px 1px 3px $neutral;
     border-radius: 10px;
     overflow: hidden; 
+    cursor: pointer;
+    @include transition(transform);
 
-    .about__card-text {
+    &:hover {
+      transform: scale(1.02);
+    }
+
+    &-text {
      background: $neutral-light;
      padding: 1rem;
-     line-height: 1.4;
-   
-      .about__card-name {
-        color: $neutral-dark;
-        padding-top: 1rem;
-      }
+     line-height: 1.4;   
+    }
 
-      .about__card-title {
-        color: $neutral-dark;
-        text-transform: uppercase;
-        padding-bottom: 1rem;        
-      }
-    }    
+    &-name {
+      color: $neutral-dark;
+      padding-top: 1rem;
+    }
+
+    &-title {
+      color: $neutral-dark;
+      text-transform: uppercase;
+      padding-bottom: 1rem;        
+    }  
   }
 }
