@@ -34,3 +34,28 @@ li {
 img {
   width: 100%;
 }
+
+p {
+  padding-bottom: 1rem;
+}
+
+h1, h2 {
+  padding: 1rem;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2.7rem;
+
+  @include media-lg {
+    font-size: 3.5rem;
+  }
+}
+
+h2 {
+  font-size: 2.5rem;
+
+  @include media-lg {
+    font-size: 3rem;
+  }
+}

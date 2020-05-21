@@ -1,5 +1,5 @@
 header {  
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 1;  
@@ -18,9 +18,13 @@ header {
     }
   }
 
+  h2 {
+    color: $neutral-dark;
+  }
+
   .nav__logo {
     width: 8rem;
-    margin: 0 auto;
+    margin: 0 auto 2rem auto;
 
     @include media-lg {
       width: 12rem;
@@ -30,19 +34,22 @@ header {
       transform: scale(.95);
     }  
   }
-
-  h2 {
-    padding-bottom: 1rem;
+  .nav__title {
     font-size: 2.5rem;
-    font-weight: 700;
+    letter-spacing: .1rem;
+    line-height: 1.2; 
+    border: 2px solid $neutral-dark;
+    outline: 1px solid $neutral-dark;
+    outline-offset: 1.5rem;
+    margin-bottom: 6rem;    
 
     @include media-lg {
-      font-size: 3.5rem;
-    }
+      font-size: 4rem;      
+    }    
   }
 
   .nav__list {
-    margin: 2rem 0; 
+    margin-bottom: 4rem; 
     
     @include media-lg {
       margin: 6rem 0;
@@ -56,18 +63,21 @@ header {
       @include transition(background-color); 
       
       @include media-lg {
-        font-size: 3rem;
+        font-size: 2.7rem;
       }
     }
   }
 
-  .nav__link {
-    display: block;
+  .nav__link {   
     color: $neutral;
     font-weight: 700;
     position: relative;
     display: inline-block;
     padding-bottom: .3rem;
+
+    @include media-lg {
+      color: $neutral-light;
+    }
       
     &::before,
     &::after {
@@ -79,6 +89,10 @@ header {
       left: 0;
       transform: scaleX(0);
       @include transition(all);
+
+      @include media-lg {
+        background-color: $neutral-dark;
+      }
     }
 
     &::after {
@@ -101,9 +115,6 @@ header {
     }
   }  
 
-  h3 {
-    padding-bottom: 1rem;
-  }
 
   .nav__list-social {
     @include flex(row, center);
@@ -113,13 +124,21 @@ header {
       display: block;
       padding: 1rem;
       margin: .5rem;     
-      background: $primary-light;
+      background-color: $primary-light;
       border-radius: 50%;
-      box-shadow: 1px 1px 2px;
+      box-shadow: 1px 1px 2px $primary-dark;
       @include transition(background-color);
+
+      @include media-lg {
+        background-color: $neutral-light;
+      }
 
       &:hover {
         background-color: $neutral-light;
+
+        @include media-lg {
+          background-color: $primary-dark;
+        }
       } 
     }
   }
@@ -130,7 +149,7 @@ header {
   }
 
   .nav__toggle {
-    position: absolute;
+    position: fixed;
     top: 1.5rem;
     left: 1.5rem;
     height: 2.5rem;
@@ -145,24 +164,22 @@ header {
 }
 
 .header__container {
-  @include flex(column, space-around);
+  @include flex(column, space-between);
   max-width: 25rem;
-  height: 100vh;
+  height: 100%;
   background: $neutral-light;
   text-align: center;
   transform: translateX(-25rem);
   position: relative;
   padding: 0 2rem;
-
-  @include media-hg {    
-    max-height: 70rem;
-  }
-
+ 
   @include media-lg {
-    max-width: 30rem;
+    max-width: 60rem;      
     transform: translateX(0);
-    padding: 10rem 2rem; 
-    margin: 0 auto;   
+    padding: 2rem; 
+    margin: 0 auto;
+    background: linear-gradient(to bottom right, $primary-color, $primary-dark);
+    color: $neutral-light;
   }
 }
 

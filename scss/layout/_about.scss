@@ -1,0 +1,81 @@
+.about__intro {
+  background: $neutral-light;
+  padding: 5rem 2rem;  
+}  
+
+.about__team {
+  background: $neutral-light;
+  padding-bottom: 5rem;
+  position: relative;
+  overflow: scroll;
+
+  @include media-md {
+    overflow: hidden;
+  }
+
+  .about__img {
+    max-width: 60%;
+    margin-left: -10rem; 
+  }
+
+  .about__text {
+    background: linear-gradient(to bottom right, $primary-color, $primary-dark);
+    color: $neutral-light;
+    padding: 2rem;    
+    position: absolute;
+    max-width: 70%;
+    top: 4rem;
+    right: 1rem;  
+
+    @include media-md {
+      max-width: 60%;
+    }
+  }
+}
+
+.about__cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 120rem;
+  margin: 10rem auto;
+
+  @include media-sm {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include media-lg {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .about__card {
+    @include flex(column, stretch);   
+    box-shadow: 1px 1px 3px $neutral;
+    border-radius: 10px;
+    overflow: hidden; 
+    cursor: pointer;
+    @include transition(transform);
+
+    &:hover {
+      transform: scale(1.02);
+    }
+
+    &-text {
+     background: $neutral-light;
+     padding: 1rem;
+     line-height: 1.4;   
+    }
+
+    &-name {
+      color: $neutral-dark;
+      padding-top: 1rem;
+    }
+
+    &-title {
+      color: $neutral-dark;
+      text-transform: uppercase;
+      padding-bottom: 1rem;        
+    }  
+  }
+}
