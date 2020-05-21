@@ -24,7 +24,7 @@ header {
 
   .nav__logo {
     width: 8rem;
-    margin: 0 auto;
+    margin: 0 auto 2rem auto;
 
     @include media-lg {
       width: 12rem;
@@ -34,9 +34,22 @@ header {
       transform: scale(.95);
     }  
   }
+  .nav__title {
+    font-size: 2.5rem;
+    letter-spacing: .1rem;
+    line-height: 1.2; 
+    border: 2px solid $neutral-dark;
+    outline: 1px solid $neutral-dark;
+    outline-offset: 1.5rem;
+    margin-bottom: 6rem;    
+
+    @include media-lg {
+      font-size: 4rem;      
+    }    
+  }
 
   .nav__list {
-    margin: 2rem 0; 
+    margin-bottom: 4rem; 
     
     @include media-lg {
       margin: 6rem 0;
@@ -102,9 +115,6 @@ header {
     }
   }  
 
-  h3 {
-    padding-bottom: 1rem;
-  }
 
   .nav__list-social {
     @include flex(row, center);
@@ -164,7 +174,7 @@ header {
   padding: 0 2rem;
  
   @include media-lg {
-    max-width: 40rem;      
+    max-width: 60rem;      
     transform: translateX(0);
     padding: 2rem; 
     margin: 0 auto;
