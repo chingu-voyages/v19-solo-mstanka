@@ -1,5 +1,9 @@
 .main__container {
-  min-height: 90rem;
+  min-height: 100vh;
+
+  @include media-md {
+    min-height: 90rem;
+  }
 
   @include media-lg {
     grid-row: 1 / 2;
@@ -9,13 +13,17 @@
 
 .intro__section {
   padding: 5rem 0;
-  height: 90rem;
+  height: 100vh;
   position: relative;
   text-align: center;
   @include flex(column, center);
   color: $neutral-light;
   background: rgba(0, 0, 0, 0.6);
 
+  @include media-md {
+    height: 90rem;
+  }
+ 
   .intro__title {
     font-size: 4rem;
     margin-bottom: .5rem;
@@ -34,7 +42,7 @@
   }
 
   .intro__lead {
-    padding: 0.5rem 3rem;
+    padding: .5rem 1.5rem;
     font-size: 4rem;
     text-transform: uppercase;
     font-weight: 300;
@@ -45,6 +53,7 @@
 
     @include media-md {
       font-size: 6rem;
+      padding: .5rem 3rem;
     }
   }
 
@@ -75,7 +84,7 @@
       $primary-dark 50%,
       $neutral-light 50%
     );
-    background-size: 30000%;
+    background-size: 80000%;
     @include transition(all);
     transition: .5s cubic-bezier(1.0.0.1);
 

@@ -324,8 +324,8 @@ header .nav__toggle {
   height: 100%;
   background: #fffffe;
   text-align: center;
-  -webkit-transform: translateX(-25rem);
-          transform: translateX(-25rem);
+  -webkit-transform: translateX(-27rem);
+          transform: translateX(-27rem);
   position: relative;
   padding: 0 2rem;
 }
@@ -348,7 +348,13 @@ header .nav__toggle {
 }
 
 .main__container {
-  min-height: 90rem;
+  min-height: 100vh;
+}
+
+@media screen and (min-width: 768px) {
+  .main__container {
+    min-height: 90rem;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -364,7 +370,7 @@ header .nav__toggle {
 
 .intro__section {
   padding: 5rem 0;
-  height: 90rem;
+  height: 100vh;
   position: relative;
   text-align: center;
   display: -webkit-box;
@@ -382,6 +388,12 @@ header .nav__toggle {
           align-items: center;
   color: #fffffe;
   background: rgba(0, 0, 0, 0.6);
+}
+
+@media screen and (min-width: 768px) {
+  .intro__section {
+    height: 90rem;
+  }
 }
 
 .intro__section .intro__title {
@@ -406,7 +418,7 @@ header .nav__toggle {
 }
 
 .intro__section .intro__lead {
-  padding: 0.5rem 3rem;
+  padding: .5rem 1.5rem;
   font-size: 4rem;
   text-transform: uppercase;
   font-weight: 300;
@@ -420,6 +432,7 @@ header .nav__toggle {
 @media screen and (min-width: 768px) {
   .intro__section .intro__lead {
     font-size: 6rem;
+    padding: .5rem 3rem;
   }
 }
 
@@ -441,7 +454,7 @@ header .nav__toggle {
   background-image: linear-gradient(120deg, #f25f4c 0%, #A63223 50%, #fffffe 50%);
   background-image: -webkit-gradient(linear, left top, right bottom, from(#f25f4c), color-stop(50%, #A63223), color-stop(50%, #fffffe));
   background-image: linear-gradient(to bottom right, #f25f4c 0%, #A63223 50%, #fffffe 50%);
-  background-size: 30000%;
+  background-size: 80000%;
   -webkit-transition: all 0.5s ease-in;
   transition: all 0.5s ease-in;
   -webkit-transition: 0.5s cubic-bezier(1 0 0.1);
@@ -553,16 +566,6 @@ header .nav__toggle {
           box-shadow: 1px 1px 3px #6c6d79;
   border-radius: 10px;
   overflow: hidden;
-  cursor: pointer;
-  -webkit-transition: -webkit-transform 0.5s ease-in;
-  transition: -webkit-transform 0.5s ease-in;
-  transition: transform 0.5s ease-in;
-  transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
-}
-
-.about__cards .about__card:hover {
-  -webkit-transform: scale(1.02);
-          transform: scale(1.02);
 }
 
 .about__cards .about__card-text {
@@ -580,6 +583,60 @@ header .nav__toggle {
   color: #0f0e17;
   text-transform: uppercase;
   padding-bottom: 1rem;
+}
+
+.gallery {
+  padding: 10rem 0 0 0;
+  background: #0f0e17;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+}
+
+.gallery__img-box {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  border: 2px solid #0f0e17;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .gallery__img-box {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .gallery__img-box {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.33333%;
+            flex: 0 0 33.33333%;
+  }
+}
+
+.gallery__image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background: #f25f4c;
+  opacity: .6;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+
+.gallery__image:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  opacity: 1;
 }
 
 .footer__container {
