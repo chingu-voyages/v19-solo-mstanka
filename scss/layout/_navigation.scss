@@ -23,24 +23,24 @@ header {
   }
 
   .nav__logo {
-    width: 8rem;
-    margin: 0 auto 2rem auto;
+    width: 10rem;
+    margin: 2rem auto 0 auto;
 
     @include media-lg {
-      width: 12rem;
+      margin: 0 auto 2rem auto;
+      width: 15rem;
     }
 
     &:hover {
       transform: scale(.95);
-    }  
+    }     
   }
+
   .nav__title {
     font-size: 2.5rem;
     letter-spacing: .1rem;
-    line-height: 1.2; 
-    border: 2px solid $neutral-dark;
-    outline: 1px solid $neutral-dark;
-    outline-offset: 1.5rem;
+    line-height: 1; 
+    border-bottom: 2px solid $neutral-dark;  
     margin-bottom: 6rem;    
 
     @include media-lg {
@@ -56,11 +56,12 @@ header {
     }
 
     li {
-      padding: .5rem 1.5rem; 
-      margin: .5rem auto;
-      font-size: 2rem;      
+      padding: 0 1.5rem; 
+      margin: .2rem auto;
+      font-size: 2rem;
+      text-transform: uppercase;    
       border-radius: 10px;       
-      @include transition(background-color); 
+      @include transition(all); 
       
       @include media-lg {
         font-size: 2.7rem;
@@ -77,6 +78,14 @@ header {
 
     @include media-lg {
       color: $neutral-light;
+    }
+
+    &--active {
+      color: $neutral-dark;
+
+      @include media-lg {
+        color: $primary-dark;
+      }
     }
       
     &::before,
@@ -97,12 +106,10 @@ header {
 
     &::after {
       bottom: 0;
-      transform-origin: left;
     }
 
     &::before {
       bottom: 0;
-      transform-origin: right;
     }
 
     &:hover {
@@ -115,7 +122,6 @@ header {
     }
   }  
 
-
   .nav__list-social {
     @include flex(row, center);
     padding: 2rem 0;
@@ -124,7 +130,7 @@ header {
       display: block;
       padding: 1rem;
       margin: .5rem;     
-      background-color: $primary-light;
+      background-color: $primary-color;
       border-radius: 50%;
       box-shadow: 1px 1px 2px $primary-dark;
       @include transition(background-color);
@@ -155,7 +161,9 @@ header {
     height: 2.5rem;
     width: 2.5rem;
     cursor: pointer;
-    z-index: 2;
+    z-index: 2;  
+    outline: 3px solid $primary-dark;
+    outline-offset: .7rem;
 
     @include media-lg {
       display: none;
@@ -178,7 +186,7 @@ header {
     transform: translateX(0);
     padding: 2rem; 
     margin: 0 auto;
-    background: linear-gradient(to bottom right, $primary-color, $primary-dark);
+    background: linear-gradient(100deg, $primary-color, $primary-dark);
     color: $neutral-light;
   }
 }

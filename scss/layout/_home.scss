@@ -1,63 +1,87 @@
 .main__container {
-  min-height: 900px;
- 
+  min-height: 90rem;
+
   @include media-lg {
-    grid-row:  1 / 2;
-    grid-column: 2 / 4;    
+    grid-row: 1 / 2;
+    grid-column: 2 / 4;
   }
 }
 
-.intro__section { 
-  padding: 5rem 0; 
-  height: 900px;
+.intro__section {
+  padding: 5rem 0;
+  height: 90rem;
   position: relative;
   text-align: center;
   @include flex(column, center);
   color: $neutral-light;
-  background: rgba(0, 0, 0, .5);
+  background: rgba(0, 0, 0, 0.6);
 
-  .intro__title {    
+  .intro__title {
     font-size: 4rem;
-    margin-bottom: 2rem;
-    letter-spacing: .1rem;
-    line-height: 1.2; 
-    padding: 0.5rem 3rem;  
-    border: 2px solid $neutral-light;
-    outline: 1px solid $neutral-light;
-    outline-offset: 1.5rem;      
+    margin-bottom: .5rem;
+    letter-spacing: 0.1rem;
+    line-height: 1;
+    font-weight: 300;
+    border-bottom: 2px solid $neutral-light;
+
+    @include media-md {
+      font-size: 5rem;
+    }
+
+    @include media-lg {
+      display: none;
+    }
+  }
+
+  .intro__lead {
+    padding: 0.5rem 3rem;
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    background-image: linear-gradient(to right, $primary-light, $primary-dark);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 
     @include media-md {
       font-size: 6rem;
     }
   }
 
-  .intro__lead {       
-    margin-bottom: 6rem;
-    padding: 0.5rem 3rem;
-    text-transform: uppercase; 
-
-    @include media-md {
-      font-size: 4rem;
-    }
-  }
-
   .intro__details {
-    margin-bottom: 4rem;
-    max-width: 400px;
+    margin-bottom: 3rem;
+    max-width: 50rem;
+    font-size: 2.5rem;
+    font-weight: 300;
   }
 
   .intro__cta a {
     display: block;
     padding: 1rem 3rem;
     text-transform: uppercase;
-    font-size: 2rem;
-    color: $neutral-dark;
-    background: $neutral-light;
-    @include transition(background-color); 
-    
+    font-size: 2.5rem;
+    color: $neutral-light;
+    border: 1px solid $primary-dark;
+    border-radius: 5px;
+    background-image: linear-gradient(
+      120deg,
+      $primary-color 0%,
+      $primary-dark 50%,
+      $neutral-light 50%
+    );
+    background-image: linear-gradient(
+      to bottom right,
+      $primary-color 0%,
+      $primary-dark 50%,
+      $neutral-light 50%
+    );
+    background-size: 30000%;
+    @include transition(all);
+    transition: .5s cubic-bezier(1.0.0.1);
+
     &:hover {
-      background-color: linear-gradient(to bottom right, $primary-color, $primary-dark);
-      color: $neutral-light;
+      background-position: 100%;
+      color: $neutral-dark;
     }
   }
 
@@ -68,12 +92,12 @@
     height: 100%;
     width: 100%;
     z-index: -1;
-    overflow: hidden; 
-      
+    overflow: hidden;
+
     &__content {
       height: 100%;
       width: 100%;
-      object-fit: cover;      
+      object-fit: cover;
     }
   }
 }
