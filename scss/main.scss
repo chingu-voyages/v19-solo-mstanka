@@ -1,13 +1,15 @@
-@import 'abstracts/variables',
-        'abstracts/mixins',
+@import "abstracts/mixins",
+        "abstracts/variables", 
 
-        'base/reset',
-        'base/typography',
-        'base/utilities',
+        "base/base",
+        "base/typography", 
+        "base/utilities", 
 
-        'layout/navigation',
-        'layout/home',         
-        'layout/about',
-        'layout/gallery',
-        'layout/contact',        
-        'layout/footer';
+        "layout/footer", 
+        "layout/layout",
+        "layout/navigation", 
+  
+        "pages/about",   
+        "pages/contact", 
+        "pages/gallery", 
+        "pages/home";

@@ -1,11 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Captured || Gallery</title>
+  <link rel="stylesheet" href="./css/main.css">
 </head>
-<body>
-  Gallery page
+
+<body class="body__container">
+
+  <!--*************Navigation***************-->
+  <header>
+    <span class="nav__toggle" id="js-navbar-toggle">
+      <img src="./img/menu-open.svg" alt="Icon menu open" id="js-menu-icon">
+    </span>
+    <div class="header__container" id="js-menu">
+      <nav class="nav">
+        <div class="nav__logo-box">
+          <a href="./index.html">
+            <img src="./img/camera.svg" alt="Camera logo" class="nav__logo">
+          </a>
+        </div>
+        <h2 class="nav__title">CaptureD</h2>
+        <ul class="nav__list">
+          <li><a href="./index.html" class="nav__link">Home</a></li>
+          <li><a href="./about.html" class="nav__link">About</a></li>
+          <li><a href="./gallery.html" class="nav__link nav__link--active">Gallery</a></li>
+          <li><a href="./contact.html" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h3>Follow Us Here!</h3>
+        <ul class="nav__list-social">
+          <li>
+            <a href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener" class="nav__link-social">
+              <img src="./img/facebook.svg" alt="Facebook logo">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com/" target="_blank" rel="noreferrer noopener" class="nav__link-social">
+              <img src="./img/twitter.svg" alt="Twitter logo">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/" target="_blank" rel="noreferrer noopener" class="nav__link-social">
+              <img src="./img/instagram.svg" alt="Instagram logo">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer noopener" class="nav__link-social">
+              <img src="./img/linkedin.svg" alt="Linkedin logo">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!--*************Gallery***************-->
+  <main class="main__container">
+    <section class="gallery">
+      <figcaption class="gallery__img-box">
+        <img src="./img/image_1.jpg" alt="Image 1" class="gallery__image">
+      </figcaption>
+      <figcaption class="gallery__img-box">
+        <img src="./img/image_2.jpg" alt="Image 2" class="gallery__image">
+      </figcaption>
+      <figcaption class="gallery__img-box">
+        <img src="./img/image_3.jpg" alt="Image 3" class="gallery__image">
+      </figcaption>
+      <figcaption class="gallery__img-box">
+        <img src="./img/image_4.jpg" alt="Image 4" class="gallery__image">
+      </figcaption>
+      <figcaption class="gallery__img-box">
+        <img src="./img/image_5.jpg" alt="Image 5" class="gallery__image">
+      </figcaption>
+      <figcaption class="gallery__img-box">
+        <img src="./img/image_6.jpg" alt="Image 6" class="gallery__image">
+      </figcaption>
+      <figcaption class="gallery__img-box">
+        <img src="./img/image_7.jpg" alt="Image 7" class="gallery__image">
+      </figcaption>
+      <figcaption class="gallery__img-box">
+        <img src="./img/image_8.jpg" alt="Image 8" class="gallery__image">
+      </figcaption>
+      <figcaption class="gallery__img-box">
+        <img src="./img/image_9.jpg" alt="Image 9" class="gallery__image">
+      </figcaption>
+      <figcaption class="gallery__img-box">
+        <img src="./img/image_10.jpg" alt="Image 10" class="gallery__image">
+      </figcaption>
+      <figcaption class="gallery__img-box">
+        <img src="./img/image_11.jpg" alt="Image 11" class="gallery__image">
+      </figcaption>
+      <figcaption class="gallery__img-box">
+        <img src="./img/image_12.jpg" alt="Image 12" class="gallery__image">
+      </figcaption>
+    </section>
+
+  </main>
+
+  <!--*************Footer***************-->
+  <footer class="footer__container">
+    <h3>Feel Free to Contact Us!</h3>
+
+    <ul class="footer__contact">
+      <li>
+        <ion-icon name="location-outline"></ion-icon> 203 Fake St. Mountain View, Main City, Europe
+      </li>
+      <li>
+        <ion-icon name="mail-outline"></ion-icon> info@captured.com
+      </li>
+      <li>
+        <ion-icon name="call-outline"></ion-icon> +123 456 789
+      </li>
+    </ul>
+
+    <div class="footer__attribution">
+      <p>Copyright &copy 2020 All rights reserved</p>
+      <p>Coded with <ion-icon name="heart"></ion-icon> by <a href="https://github.com/mstanka" target="_blank"
+          rel="noreferrer noopener">mstanka </a>for <a href="https://www.chingu.io/" target="_blank"
+          rel="noreferrer noopener">Chingu</a></p>      
+      <p>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a
+          href="https://www.flaticon.com/" rel="noreferrer noopener" title="Flaticon">www.flaticon.com</a></p>
+    </div>
+
+  </footer>
+
+  <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+  <script src="./js/main.js"></script>
 </body>
+
 </html>

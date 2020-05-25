@@ -54,12 +54,6 @@
     box-shadow: 1px 1px 3px $neutral;
     border-radius: 10px;
     overflow: hidden; 
-    cursor: pointer;
-    @include transition(transform);
-
-    &:hover {
-      transform: scale(1.02);
-    }
 
     &-text {
      background: $neutral-light;

@@ -1,0 +1,99 @@
+.intro__section {
+  padding: 5rem 0;
+  height: 100vh;
+  position: relative;
+  text-align: center;
+  @include flex(column, center);
+  color: $neutral-light;
+  background: rgba(0, 0, 0, 0.6);
+
+  @include media-md {
+    height: 90rem;
+  }
+ 
+  .intro__title {
+    font-size: 4rem;
+    margin-bottom: .5rem;
+    letter-spacing: 0.1rem;
+    line-height: 1;
+    font-weight: 300;
+    border-bottom: 2px solid $neutral-light;
+
+    @include media-md {
+      font-size: 5rem;
+    }
+
+    @include media-lg {
+      display: none;
+    }
+  }
+
+  .intro__lead {
+    padding: .5rem 1.5rem;
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    background-image: linear-gradient(to right, $primary-light, $primary-dark);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+    @include media-md {
+      font-size: 6rem;
+      padding: .5rem 3rem;
+    }
+  }
+
+  .intro__details {
+    margin-bottom: 3rem;
+    max-width: 50rem;
+    font-size: 2.5rem;
+    font-weight: 300;
+  }
+
+  .intro__cta a {
+    display: block;
+    padding: 1rem 3rem;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    color: $neutral-light;
+    border: 1px solid $primary-dark;
+    border-radius: 5px;
+    background-image: linear-gradient(
+      120deg,
+      $primary-color 0%,
+      $primary-dark 50%,
+      $neutral-light 50%
+    );
+    background-image: linear-gradient(
+      to bottom right,
+      $primary-color 0%,
+      $primary-dark 50%,
+      $neutral-light 50%
+    );
+    background-size: 80000%;
+    @include transition(all);
+    transition: .5s cubic-bezier(1.0.0.1);
+
+    &:hover {
+      background-position: 100%;
+      color: $neutral-dark;
+    }
+  }
+
+  .bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    overflow: hidden;
+
+    &__content {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
