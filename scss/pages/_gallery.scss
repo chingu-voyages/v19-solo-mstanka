@@ -10,7 +10,6 @@
     border: 2px solid $neutral-dark;
     padding: 1rem;
     cursor: pointer;
-    //overflow: hidden;
 
     @include media-md {
       flex: 0 0 50%;
@@ -37,18 +36,3 @@
   }
 }
 
-// .gallery__img-box::after {
-//       content: "";
-//       position: absolute;
-//       top: 100%;
-//       left: 0;
-//       height: 100%;
-//       width: 100%;
-//       background: $primary-color;
-//       opacity: 0;
-//     }
-
-//     .gallery__img-box:hover::after {
-//       top: 0;
-//       opacity: 0.4;
-//     }
