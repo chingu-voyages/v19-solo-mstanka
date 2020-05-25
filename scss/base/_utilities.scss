@@ -18,7 +18,7 @@ body {
   grid-template-columns: 1fr;
  
   @include media-lg {
-    grid-template-columns: minmax(20vw, 30rem) repeat(2, 1fr);    
+    grid-template-columns: minmax(mincontent, 30vw) repeat(2, 1fr);    
   }  
 }
 

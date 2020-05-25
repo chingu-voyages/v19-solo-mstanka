@@ -1,5 +1,6 @@
 .main__container {
   min-height: 100vh;
+  min-width: 60vw;
 
   @include media-md {
     min-height: 90rem;
