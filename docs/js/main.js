@@ -24,10 +24,13 @@ const lastName = document.getElementById("last-name");
 const email = document.getElementById("email");
 const yourMessage = document.getElementById("message");
 
-form.addEventListener("click", (e) => {
-  e.preventDefault();
-  checkInputs();
-});
+// inside if statement to prevent error 'cannot read property addEventlistener of null on other pages than Contact page
+if(form) {
+  form.addEventListener("click", (e) => {
+    e.preventDefault();
+    checkInputs();
+  });
+}
 
 function checkInputs() {
   let regEx = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
