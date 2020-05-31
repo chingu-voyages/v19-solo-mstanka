@@ -7,8 +7,41 @@
   padding: 1rem 0;
 }
 
+.contact__subtitle {
+  text-align: center;
+}
+
+.contact__list {
+  padding-bottom: 10rem;
+  @include flex(column, center);
+  align-items: stretch;
+
+  @include media-md {    
+    flex-direction: row;
+  }
+}
+
+.contact__item {
+  padding: 2rem 0;
+  @include flex(row, center);
+  margin: 1rem;
+  padding: 3rem 1rem;
+  border: 1px solid $primary-dark;
+  border-radius: 1rem;
+  flex: 1;
+
+  ion-icon {
+    font-size: 4rem;
+    color: $neutral-light;
+    margin-right: 2rem;
+    background: $primary-dark;
+    padding: 1rem;
+    border-radius: 50%;
+  }
+}
+
 .contact__form {
-  background: linear-gradient(to bottom right, $primary-color, $primary-dark);
+  background: linear-gradient(to bottom right, $neutral, $neutral-dark);
   color: $neutral-light;
   padding: 4rem;
 }
@@ -40,33 +73,33 @@
       &:focus {
         border: 2px solid $primary-dark;
       }
-    }    
+    }
   }
 
   &__icon-error {
-      position: absolute;
-      top: 1.5rem;
-      right: 1rem;
-      color: $primary-dark;
-      font-size: 2rem;
-      visibility: hidden;
-    }
+    position: absolute;
+    top: 1.5rem;
+    right: 1rem;
+    color: $primary-dark;
+    font-size: 2rem;
+    visibility: hidden;
+  }
 
-    &__msg-error {
-      position: absolute;
-      font-size: 1.2rem;
-      color: $neutral-dark;
-      bottom: 0;
-      right: 1rem;
-      visibility: hidden;
-    }
-  
+  &__msg-error {
+    position: absolute;
+    font-size: 1.2rem;
+    color: $neutral-light;
+    bottom: 0;
+    right: 1rem;
+    visibility: hidden;
+  }
+
   &__btn {
     padding: 1rem 2rem;
     outline: none;
     border: 1px solid $primary-dark;
     border-radius: 5px;
-    background: $neutral-dark;
+    background: $primary-dark;
     color: $neutral-light;
     text-transform: uppercase;
     font: inherit;
