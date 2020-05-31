@@ -566,6 +566,7 @@ header {
   right: 1rem;
   color: #A63223;
   font-size: 2rem;
+  visibility: hidden;
 }
 
 .form__msg-error {
@@ -574,6 +575,7 @@ header {
   color: #0f0e17;
   bottom: 0;
   right: 1rem;
+  visibility: hidden;
 }
 
 .form__btn {
@@ -585,6 +587,7 @@ header {
   color: #fffffe;
   text-transform: uppercase;
   font: inherit;
+  cursor: pointer;
   -webkit-transition: all 0.5s ease-in;
   transition: all 0.5s ease-in;
 }

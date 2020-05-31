@@ -49,7 +49,7 @@
       right: 1rem;
       color: $primary-dark;
       font-size: 2rem;
-      //visibility: hidden;
+      visibility: hidden;
     }
 
     &__msg-error {
@@ -58,7 +58,7 @@
       color: $neutral-dark;
       bottom: 0;
       right: 1rem;
-      //visibility: hidden;
+      visibility: hidden;
     }
   
   &__btn {
@@ -70,6 +70,7 @@
     color: $neutral-light;
     text-transform: uppercase;
     font: inherit;
+    cursor: pointer;
     @include transition(all);
 
     &:hover {
