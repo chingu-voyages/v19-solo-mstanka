@@ -6,10 +6,6 @@
   @include flex(column, center);
   color: $neutral-light;
   background: rgba(0, 0, 0, 0.6);
-
-  @include media-md {
-    height: 90rem;
-  }
  
   .intro__title {
     font-size: 4rem;
