@@ -1,0 +1,80 @@
+.contact__intro {
+  background: $neutral-light;
+  padding: 5rem 2rem;
+}
+
+.contact__title {
+  padding: 1rem 0;
+}
+
+.contact__form {
+  background: linear-gradient(to bottom right, $primary-color, $primary-dark);
+  color: $neutral-light;
+  padding: 4rem;
+}
+
+.form {
+  @include flex(column, center);
+  max-width: 30rem;
+  margin: 0 auto;
+
+  @include media-md {
+    max-width: 50rem;
+  }
+
+  &__input {
+    position: relative;
+    padding-bottom: 2.5rem;
+    width: 100%;
+
+    input,
+    textarea {
+      display: block;
+      width: 100%;
+      padding: 1rem;
+      font: inherit;
+      outline: none;
+      border-radius: 0.5rem;
+      border: 1px solid $primary-dark;
+
+      &:focus {
+        border: 2px solid $primary-dark;
+      }
+    }    
+  }
+
+  &__icon-error {
+      position: absolute;
+      top: 1.5rem;
+      right: 1rem;
+      color: $primary-dark;
+      font-size: 2rem;
+      //visibility: hidden;
+    }
+
+    &__msg-error {
+      position: absolute;
+      font-size: 1.2rem;
+      color: $neutral-dark;
+      bottom: 0;
+      right: 1rem;
+      //visibility: hidden;
+    }
+  
+  &__btn {
+    padding: 1rem 2rem;
+    outline: none;
+    border: 1px solid $primary-dark;
+    border-radius: 5px;
+    background: $neutral-dark;
+    color: $neutral-light;
+    text-transform: uppercase;
+    font: inherit;
+    @include transition(all);
+
+    &:hover {
+      background: $neutral-light;
+      color: $neutral-dark;
+    }
+  }
+}
