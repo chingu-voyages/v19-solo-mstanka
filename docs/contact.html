@@ -1,11 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Captured || Contact </title>
+  <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule="" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"></script>
+  <link rel="stylesheet" href="./css/main.css">
 </head>
-<body>
-  Contact page
+
+<body class="body__container">
+  <!--*************Navigation***************-->
+  <header>
+    <span class="nav__toggle" id="js-navbar-toggle">
+      <img src="./img/menu-open.svg" alt="Icon menu open" id="js-menu-icon">
+    </span>
+    <div class="header__container" id="js-menu">
+      <nav class="nav">
+        <div class="nav__logo">
+          <a href="./index.html">
+            <img src="./img/camera.svg" alt="Camera logo">
+          </a>
+        </div>
+        <h2 class="nav__title">CaptureD</h2>
+        <ul class="nav__list">
+          <li><a href="./index.html" class="nav__link">Home</a></li>
+          <li><a href="./about.html" class="nav__link">About</a></li>
+          <li><a href="./gallery.html" class="nav__link">Gallery</a></li>
+          <li><a href="./contact.html" class="nav__link nav__link--active">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="social">
+        <h3>Follow Us Here!</h3>
+        <ul class="nav__list-social">
+          <li>
+            <a href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener" class="nav__link-social">
+              <img src="./img/facebook.svg" alt="Facebook logo">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com/" target="_blank" rel="noreferrer noopener" class="nav__link-social">
+              <img src="./img/twitter.svg" alt="Twitter logo">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/" target="_blank" rel="noreferrer noopener" class="nav__link-social">
+              <img src="./img/instagram.svg" alt="Instagram logo">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer noopener" class="nav__link-social">
+              <img src="./img/linkedin.svg" alt="Linkedin logo">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!--*************Contact***************-->
+  <main class="main__container">
+    <!--*************Contact Intro***************-->
+    <section id="contact" class="contact__intro">
+      <h1 class="contact__title">Contact Us</h1>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam quae quos facilis ea placeat minima
+        temporibus earum accusantium soluta explicabo.</p>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, quos!</p>
+    </section>
+
+    <!--*************Contact Details***************-->
+    <section id="contact" class="contact__details">
+      <h2 class="contact__subtitle">Contact Details</h2>
+      <ul class="contact__list">
+        <li class="contact__item">
+          <ion-icon name="location-outline"></ion-icon> 
+          203 Fake St. Mountain View, Main City, Europe
+        </li>
+        <li class="contact__item">
+          <ion-icon name="mail-outline"></ion-icon> 
+          info@captured.com
+        </li>
+        <li class="contact__item">
+          <ion-icon name="call-outline"></ion-icon> 
+          +123 456 789
+        </li>
+      </ul>      
+    </section>
+
+    <!--*************Contact form***************-->
+    <section class="contact__form">
+      <h2 class="contact__subtitle">Send Us Message</h2>
+      <form id="form" class="form" novalidate>
+        <div class="form__input">
+          <input type="text" name="name" id="first-name" aria-label="first name" placeholder="First Name" required>
+          <ion-icon name="alert-circle-outline" class="form__icon-error"></ion-icon>
+          <span class="form__msg-error">Error message</span>
+        </div>
+
+        <div class="form__input">
+          <input type="text" name="name" id="last-name" aria-label="last name" placeholder="Last Name" required>
+          <ion-icon name="alert-circle-outline" class="form__icon-error"></ion-icon>
+          <span class="form__msg-error">Error message</span>
+        </div>
+
+        <div class="form__input">
+          <input type="email" name="email" id="email" aria-label="email address" placeholder="Email Address" required>
+          <ion-icon name="alert-circle-outline" class="form__icon-error"></ion-icon>
+          <span class="form__msg-error">Error message</span>
+        </div>
+
+        <div class="form__input">
+          <textarea type="text" name="message" id="message" rows="6" aria-label="message" placeholder="Your Messsage..."
+            required></textarea>
+          <ion-icon name="alert-circle-outline" class="form__icon-error"></ion-icon>
+          <span class="form__msg-error">Error message</span>
+        </div>
+
+        <button type="submit" id="submit-btn" class="form__btn">Submit Your Message</button>
+
+      </form>
+    </section>
+
+  </main>
+
+  <!--*************Footer***************-->
+  <footer class="footer__container">
+    <h3>Feel Free to Contact Us!</h3>
+
+    <ul class="footer__contact">
+      <li>
+        <ion-icon name="location-outline"></ion-icon> 203 Fake St. Mountain View, Main City, Europe
+      </li>
+      <li>
+        <ion-icon name="mail-outline"></ion-icon> info@captured.com
+      </li>
+      <li>
+        <ion-icon name="call-outline"></ion-icon> +123 456 789
+      </li>
+    </ul>
+
+    <div class="footer__attribution">
+      <p>Copyright &copy 2020 All rights reserved</p>
+      <p>Coded with <ion-icon name="heart"></ion-icon> by <a href="https://github.com/mstanka" target="_blank"
+          rel="noreferrer noopener">mstanka </a>for <a href="https://www.chingu.io/" target="_blank"
+          rel="noreferrer noopener">Chingu</a></p>
+      <p>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a
+          href="https://www.flaticon.com/" rel="noreferrer noopener" title="Flaticon">www.flaticon.com</a></p>
+    </div>
+
+  </footer>
+
+  <script src="./js/main.js"></script>
 </body>
+
 </html>
