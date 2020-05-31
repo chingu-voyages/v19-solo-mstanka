@@ -23,12 +23,16 @@
 
 .contact__item {
   padding: 2rem 0;
-  @include flex(row, center);
+  @include flex(row, flex-start);
   margin: 1rem;
   padding: 3rem 1rem;
   border: 1px solid $primary-dark;
   border-radius: 1rem;
   flex: 1;
+
+   @include media-md {
+     justify-content: center;
+   }
 
   ion-icon {
     font-size: 4rem;
