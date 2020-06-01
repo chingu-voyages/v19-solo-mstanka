@@ -292,9 +292,10 @@ header {
   }
 }
 
-.nav__list-social .nav__link-social img {
-  width: 2.3rem;
+.nav__list-social .nav__link-social ion-icon {
+  font-size: 2rem;
   vertical-align: middle;
+  color: #0f0e17;
 }
 
 .nav__link {

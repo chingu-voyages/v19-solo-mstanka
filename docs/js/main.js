@@ -25,8 +25,8 @@ const email = document.getElementById("email");
 const yourMessage = document.getElementById("message");
 
 // inside if statement to prevent error 'cannot read property addEventlistener of null on other pages than Contact page
-if(form) {
-  form.addEventListener("click", (e) => {
+if (form) {
+  form.addEventListener("submit", (e) => {
     e.preventDefault();
     checkInputs();
   });
