@@ -15,13 +15,18 @@ p {
   padding-bottom: 1rem;
 }
 
-h1 {
-  padding: 1rem;
+.title {
+  padding: 1rem 0;
+  font-size: 2.8rem;
+
+  @include media-lg {
+    font-size: 3.2rem;
+  }
 }
 
-h2 {
+.subtitle {
+  padding: 1rem 0;
   font-size: 2.5rem;
-  padding: 1rem;
 
   @include media-lg {
     font-size: 3rem;

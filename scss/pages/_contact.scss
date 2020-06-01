@@ -3,11 +3,7 @@
   padding: 5rem 2rem;
 }
 
-.contact__title {
-  padding: 1rem 0;
-}
-
-.contact__subtitle {
+.contact__details {
   text-align: center;
 }
 
@@ -16,38 +12,45 @@
   @include flex(column, center);
   align-items: stretch;
 
-  @include media-md {    
+  @include media-md {
     flex-direction: row;
   }
 }
 
 .contact__item {
-  padding: 2rem 0;
   @include flex(row, flex-start);
   margin: 1rem;
   padding: 3rem 1rem;
   border: 1px solid $primary-dark;
+  box-shadow: 1px 1px 2px $neutral;
   border-radius: 1rem;
   flex: 1;
 
-   @include media-md {
-     justify-content: center;
-   }
+  @include media-md {
+    justify-content: center;
+  }
 
   ion-icon {
     font-size: 4rem;
     color: $neutral-light;
     margin-right: 2rem;
-    background: $primary-dark;
+    background-color: $primary-dark;
     padding: 1rem;
     border-radius: 50%;
+    cursor: pointer;
+    @include transition(background-color);
+
+    &:hover {
+      background-color: $neutral-dark;
+    }
   }
 }
 
 .contact__form {
-  background: linear-gradient(to bottom right, $neutral, $neutral-dark);
+  background: linear-gradient(to bottom right, $neutral, $neutral-dark, $neutral);
   color: $neutral-light;
   padding: 4rem;
+  text-align: center;
 }
 
 .form {
@@ -100,6 +103,7 @@
 
   &__btn {
     padding: 1rem 2rem;
+    margin-bottom: 1rem;
     outline: none;
     border: 1px solid $primary-dark;
     border-radius: 5px;
@@ -115,4 +119,13 @@
       color: $neutral-dark;
     }
   }
+}
+
+.contact__image {
+  background: url(../img/contact-main.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 75rem;
+  width: 100%;
 }

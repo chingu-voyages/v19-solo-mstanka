@@ -10,6 +10,7 @@
     border: 2px solid $neutral-dark;
     padding: 1rem;
     cursor: pointer;
+    position: relative;
 
     @include media-md {
       flex: 0 0 50%;
@@ -26,13 +27,21 @@
     display: block;
     object-fit: cover;
     background: $primary-color;
-    opacity: .6;
+    opacity: 0.6;
     @include transition(all);
 
     &:hover {
       transform: scale(1.02);
-       opacity: 1;
+      opacity: 1;
     }
   }
 }
 
+figcaption {
+  font-size: 3rem;
+  position: absolute;
+  left: 2rem;
+  bottom: 2rem;
+  color: $neutral-light;
+  font-weight: 300;
+}
