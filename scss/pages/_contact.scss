@@ -18,7 +18,6 @@
 }
 
 .contact__item {
-  padding: 2rem 0;
   @include flex(row, flex-start);
   margin: 1rem;
   padding: 3rem 1rem;
@@ -48,7 +47,7 @@
 }
 
 .contact__form {
-  background: linear-gradient(to bottom right, $neutral, $neutral-dark);
+  background: linear-gradient(to bottom right, $neutral, $neutral-dark, $neutral);
   color: $neutral-light;
   padding: 4rem;
   text-align: center;
@@ -104,6 +103,7 @@
 
   &__btn {
     padding: 1rem 2rem;
+    margin-bottom: 1rem;
     outline: none;
     border: 1px solid $primary-dark;
     border-radius: 5px;
@@ -119,4 +119,13 @@
       color: $neutral-dark;
     }
   }
+}
+
+.contact__image {
+  background: url(../img/contact-main.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 75rem;
+  width: 100%;
 }

@@ -524,7 +524,6 @@ header {
 }
 
 .contact__item {
-  padding: 2rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -574,8 +573,8 @@ header {
 }
 
 .contact__form {
-  background: -webkit-gradient(linear, left top, right bottom, from(#6c6d79), to(#0f0e17));
-  background: linear-gradient(to bottom right, #6c6d79, #0f0e17);
+  background: -webkit-gradient(linear, left top, right bottom, from(#6c6d79), color-stop(#0f0e17), to(#6c6d79));
+  background: linear-gradient(to bottom right, #6c6d79, #0f0e17, #6c6d79);
   color: #fffffe;
   padding: 4rem;
   text-align: center;
@@ -647,6 +646,7 @@ header {
 
 .form__btn {
   padding: 1rem 2rem;
+  margin-bottom: 1rem;
   outline: none;
   border: 1px solid #A63223;
   border-radius: 5px;
@@ -662,6 +662,15 @@ header {
 .form__btn:hover {
   background: #fffffe;
   color: #0f0e17;
+}
+
+.contact__image {
+  background: url(../img/contact-main.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 75rem;
+  width: 100%;
 }
 
 .gallery {
