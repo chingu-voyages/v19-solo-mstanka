@@ -45,17 +45,24 @@ p {
   padding-bottom: 1rem;
 }
 
-h1 {
-  padding: 1rem;
-}
-
-h2 {
-  font-size: 2.5rem;
-  padding: 1rem;
+.title {
+  padding: 1rem 0;
+  font-size: 2.8rem;
 }
 
 @media screen and (min-width: 1024px) {
-  h2 {
+  .title {
+    font-size: 3.2rem;
+  }
+}
+
+.subtitle {
+  padding: 1rem 0;
+  font-size: 2.5rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .subtitle {
     font-size: 3rem;
   }
 }
@@ -365,41 +372,54 @@ header {
 .about__intro {
   background: #fffffe;
   padding: 5rem 2rem;
+  margin-bottom: 5rem;
+}
+
+.about__services {
+  background-image: url(../img/about-main.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 30rem 2rem 3rem 2rem;
+  margin-bottom: 10rem;
+}
+
+.about__services ul li {
+  font-size: 2rem;
+  font-weight: 700;
+  list-style: square;
+  list-style-position: inside;
+}
+
+.about__services .about__cta {
+  display: inline-block;
+  padding: 1rem 2rem;
+  margin-top: 3rem;
+  outline: none;
+  border: 1px solid #A63223;
+  border-radius: 5px;
+  background: #A63223;
+  color: #fffffe;
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+
+.about__services .about__cta:hover {
+  background: #fffffe;
+  color: #0f0e17;
+}
+
+.about__text {
+  background: rgba(0, 0, 0, 0.4);
+  color: #fffffe;
+  padding: 2rem;
+  border-radius: 1rem;
 }
 
 .about__team {
-  background: #fffffe;
-  padding-bottom: 5rem;
-  position: relative;
-  overflow: scroll;
-}
-
-@media screen and (min-width: 768px) {
-  .about__team {
-    overflow: hidden;
-  }
-}
-
-.about__team .about__img {
-  max-width: 60%;
-  margin-left: -10rem;
-}
-
-.about__team .about__text {
-  background: -webkit-gradient(linear, left top, right bottom, from(#f25f4c), to(#A63223));
-  background: linear-gradient(to bottom right, #f25f4c, #A63223);
-  color: #fffffe;
-  padding: 2rem;
-  position: absolute;
-  max-width: 70%;
-  top: 4rem;
-  right: 1rem;
-}
-
-@media screen and (min-width: 768px) {
-  .about__team .about__text {
-    max-width: 60%;
-  }
+  text-align: center;
 }
 
 .about__cards {
@@ -410,7 +430,8 @@ header {
   gap: 2rem;
   padding: 2rem;
   max-width: 120rem;
-  margin: 10rem auto;
+  text-align: left;
+  margin: 2rem auto 10rem auto;
 }
 
 @media screen and (min-width: 500px) {
@@ -469,11 +490,7 @@ header {
   padding: 5rem 2rem;
 }
 
-.contact__title {
-  padding: 1rem 0;
-}
-
-.contact__subtitle {
+.contact__details {
   text-align: center;
 }
 
@@ -524,6 +541,8 @@ header {
   margin: 1rem;
   padding: 3rem 1rem;
   border: 1px solid #A63223;
+  -webkit-box-shadow: 1px 1px 2px #6c6d79;
+          box-shadow: 1px 1px 2px #6c6d79;
   border-radius: 1rem;
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -542,9 +561,16 @@ header {
   font-size: 4rem;
   color: #fffffe;
   margin-right: 2rem;
-  background: #A63223;
+  background-color: #A63223;
   padding: 1rem;
   border-radius: 50%;
+  cursor: pointer;
+  -webkit-transition: background-color 0.5s ease-in;
+  transition: background-color 0.5s ease-in;
+}
+
+.contact__item ion-icon:hover {
+  background-color: #0f0e17;
 }
 
 .contact__form {
@@ -552,6 +578,7 @@ header {
   background: linear-gradient(to bottom right, #6c6d79, #0f0e17);
   color: #fffffe;
   padding: 4rem;
+  text-align: center;
 }
 
 .form {
@@ -726,6 +753,7 @@ figcaption {
 .intro__section .intro__title {
   font-size: 4rem;
   margin-bottom: .5rem;
+  padding-bottom: 1rem;
   letter-spacing: 0.1rem;
   line-height: 1;
   font-weight: 300;
