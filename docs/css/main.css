@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@300;400;700&display=swap");
 *,
 *:before,
 *:after {
@@ -22,7 +21,7 @@ body {
 }
 
 body {
-  font-family: 'Balsamiq Sans', cursive;
+  font-family: "Balsamiq Sans", cursive;
   font-size: 1.6rem;
   font-weight: 400;
   color: #6c6d79;
@@ -656,6 +655,7 @@ header {
   border: 2px solid #0f0e17;
   padding: 1rem;
   cursor: pointer;
+  position: relative;
 }
 
 @media screen and (min-width: 768px) {
@@ -681,7 +681,7 @@ header {
   -o-object-fit: cover;
      object-fit: cover;
   background: #f25f4c;
-  opacity: .6;
+  opacity: 0.6;
   -webkit-transition: all 0.5s ease-in;
   transition: all 0.5s ease-in;
 }
@@ -690,6 +690,15 @@ header {
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
   opacity: 1;
+}
+
+figcaption {
+  font-size: 3rem;
+  position: absolute;
+  left: 2rem;
+  bottom: 2rem;
+  color: #fffffe;
+  font-weight: 300;
 }
 
 .intro__section {
