@@ -391,7 +391,7 @@ header {
   list-style-position: inside;
 }
 
-.about__services .about__cta {
+.about__cta {
   display: inline-block;
   padding: 1rem 2rem;
   margin-top: 3rem;
@@ -406,7 +406,7 @@ header {
   transition: all 0.5s ease-in;
 }
 
-.about__services .about__cta:hover {
+.about__cta:hover {
   background: #fffffe;
   color: #0f0e17;
 }
@@ -448,7 +448,7 @@ header {
   }
 }
 
-.about__cards .about__card {
+.about__card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -468,18 +468,18 @@ header {
   overflow: hidden;
 }
 
-.about__cards .about__card-text {
+.about__card-text {
   background: #fffffe;
   padding: 1rem;
   line-height: 1.4;
 }
 
-.about__cards .about__card-name {
+.about__card-name {
   color: #0f0e17;
   padding-top: 1rem;
 }
 
-.about__cards .about__card-title {
+.about__card-title {
   color: #0f0e17;
   text-transform: uppercase;
   padding-bottom: 1rem;
@@ -737,7 +737,7 @@ figcaption {
   font-weight: 300;
 }
 
-.intro__section {
+.intro {
   padding: 5rem 0;
   height: 100vh;
   position: relative;
@@ -759,7 +759,7 @@ figcaption {
   background: rgba(0, 0, 0, 0.6);
 }
 
-.intro__section .intro__title {
+.intro__title {
   font-size: 4rem;
   margin-bottom: .5rem;
   padding-bottom: 1rem;
@@ -770,18 +770,18 @@ figcaption {
 }
 
 @media screen and (min-width: 768px) {
-  .intro__section .intro__title {
+  .intro__title {
     font-size: 5rem;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .intro__section .intro__title {
+  .intro__title {
     display: none;
   }
 }
 
-.intro__section .intro__lead {
+.intro__lead {
   padding: .5rem 1.5rem;
   font-size: 4rem;
   text-transform: uppercase;
@@ -794,20 +794,20 @@ figcaption {
 }
 
 @media screen and (min-width: 768px) {
-  .intro__section .intro__lead {
+  .intro__lead {
     font-size: 6rem;
     padding: .5rem 3rem;
   }
 }
 
-.intro__section .intro__details {
+.intro__details {
   margin-bottom: 3rem;
   max-width: 50rem;
   font-size: 2.5rem;
   font-weight: 300;
 }
 
-.intro__section .intro__cta a {
+.intro__cta a {
   display: block;
   padding: 1rem 3rem;
   text-transform: uppercase;
@@ -820,12 +820,12 @@ figcaption {
   transition: all 0.5s ease-in;
 }
 
-.intro__section .intro__cta a:hover {
+.intro__cta a:hover {
   background: #fffffe;
   color: #0f0e17;
 }
 
-.intro__section .bg-video {
+.intro .bg-video {
   position: absolute;
   top: 0;
   left: 0;
@@ -835,7 +835,7 @@ figcaption {
   overflow: hidden;
 }
 
-.intro__section .bg-video__content {
+.intro .bg-video__content {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;

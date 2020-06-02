@@ -1,47 +1,50 @@
-.contact__intro {
-  background: $neutral-light;
-  padding: 5rem 2rem;
-}
+.contact {
 
-.contact__details {
-  text-align: center;
-}
-
-.contact__list {
-  padding-bottom: 10rem;
-  @include flex(column, center);
-  align-items: stretch;
-
-  @include media-md {
-    flex-direction: row;
-  }
-}
-
-.contact__item {
-  @include flex(row, flex-start);
-  margin: 1rem;
-  padding: 3rem 1rem;
-  border: 1px solid $primary-dark;
-  box-shadow: 1px 1px 2px $neutral;
-  border-radius: 1rem;
-  flex: 1;
-
-  @include media-md {
-    justify-content: center;
+  &__intro {
+    background: $neutral-light;
+    padding: 5rem 2rem;
   }
 
-  ion-icon {
-    font-size: 4rem;
-    color: $neutral-light;
-    margin-right: 2rem;
-    background-color: $primary-dark;
-    padding: 1rem;
-    border-radius: 50%;
-    cursor: pointer;
-    @include transition(background-color);
+  &__details {
+    text-align: center;
+  }
 
-    &:hover {
-      background-color: $neutral-dark;
+  &__list {
+    padding-bottom: 10rem;
+    @include flex(column, center);
+    align-items: stretch;
+
+    @include media-md {
+      flex-direction: row;
+    }
+  }
+
+  &__item {
+    @include flex(row, flex-start);
+    margin: 1rem;
+    padding: 3rem 1rem;
+    border: 1px solid $primary-dark;
+    box-shadow: 1px 1px 2px $neutral;
+    border-radius: 1rem;
+    flex: 1;
+
+    @include media-md {
+      justify-content: center;
+    }
+
+    ion-icon {
+      font-size: 4rem;
+      color: $neutral-light;
+      margin-right: 2rem;
+      background-color: $primary-dark;
+      padding: 1rem;
+      border-radius: 50%;
+      cursor: pointer;
+      @include transition(background-color);
+
+      &:hover {
+        background-color: $neutral-dark;
+      }
     }
   }
 }

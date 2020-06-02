@@ -1,27 +1,32 @@
-.about__intro {
-  background: $neutral-light;
-  padding: 5rem 2rem;
-  margin-bottom: 5rem;
-}
+.about {
 
-.about__services {
-  background-image: url(../img/about-main.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding: 30rem 2rem 3rem 2rem;
-  margin-bottom: 10rem;
-
-  ul {
-    li {
-      font-size: 2rem;
-      font-weight: 700;
-      list-style: square;
-      list-style-position: inside;
-    }
+  &__intro {
+    background: $neutral-light;
+    padding: 5rem 2rem;
+    margin-bottom: 5rem;
   }
 
-  .about__cta {
+  &__services {
+    background-image: url(../img/about-main.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 30rem 2rem 3rem 2rem;
+    margin-bottom: 10rem;
+
+    ul {
+      li {
+        font-size: 2rem;
+        font-weight: 700;
+        list-style: square;
+        list-style-position: inside;
+      }
+    }
+
+    
+  }
+  
+  &__cta {
     display: inline-block;
     padding: 1rem 2rem;
     margin-top: 3rem;
@@ -39,37 +44,38 @@
       color: $neutral-dark;
     }
   }
-}
 
-.about__text {
-  background: rgba(0, 0, 0, 0.4);
-  color: $neutral-light;
-  padding: 2rem;
-  border-radius: 1rem;
-}
-
-.about__team {
-  text-align: center;
-}
-
-.about__cards {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2rem;
-  padding: 2rem;
-  max-width: 120rem;
-  text-align: left;
-  margin: 2rem auto 10rem auto;
-
-  @include media-sm {
-    grid-template-columns: repeat(2, 1fr);
+  &__text {
+    background: rgba(0, 0, 0, 0.4);
+    color: $neutral-light;
+    padding: 2rem;
+    border-radius: 1rem;
   }
 
-  @include media-lg {
-    grid-template-columns: repeat(4, 1fr);
+  &__team {
+    text-align: center;
   }
 
-  .about__card {
+  &__cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 120rem;
+    text-align: left;
+    margin: 2rem auto 10rem auto;
+
+    @include media-sm {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include media-lg {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+  }
+
+  &__card {
     @include flex(column, stretch);
     box-shadow: 1px 1px 3px $neutral;
     border-radius: 10px;
