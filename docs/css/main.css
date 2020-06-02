@@ -67,25 +67,77 @@ p {
   }
 }
 
-.footer__container {
+.footer {
   background: #0f0e17;
   color: #fffffe;
-  padding: 4rem 1rem;
+  padding: 4rem 1rem 1rem 1rem;
+  text-align: center;
+  font-size: 1.3rem;
 }
 
 @media screen and (min-width: 1024px) {
-  .footer__container {
+  .footer {
     margin-left: auto;
     width: 75%;
   }
 }
 
-.footer__container h3 {
+.footer__title {
   padding: 0 0.5rem;
 }
 
+.footer__nav {
+  padding: 1rem 0;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__nav {
+    text-align: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 1rem 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .footer__contact {
-  margin: 4rem 0;
+  padding: 2rem 0;
+  border-top: 1px solid #6c6d79;
+  border-bottom: 1px solid #6c6d79;
+  text-align: left;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__contact {
+    border: none;
+  }
 }
 
 .footer__contact ion-icon {
@@ -94,13 +146,21 @@ p {
   padding: 0 0.5rem;
 }
 
+.footer__navlinks {
+  padding: 2rem 0;
+}
+
+.footer__navlinks a {
+  color: #fffffe;
+}
+
 .footer__attribution {
   border-top: 1px solid #6c6d79;
-  padding: 3rem 0;
+  padding-top: 3rem;
   text-align: center;
 }
 
-footer a {
+.footer__link {
   color: #6c6d79;
 }
 

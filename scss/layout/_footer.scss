@@ -1,34 +1,65 @@
-.footer__container {
+.footer {
   background: $neutral-dark;
   color: $neutral-light;
-  padding: 4rem 1rem;
+  padding: 4rem 1rem 1rem 1rem;
+  text-align: center;
+  font-size: 1.3rem;
 
   @include media-lg {
     margin-left: auto;
     width: 75%;
   }
 
-  h3 {
+  &__title {
     padding: 0 0.5rem;
   }
-}
 
-.footer__contact {
-  margin: 4rem 0;
+  &__nav {
+    padding: 1rem 0;
 
-  ion-icon {
-    font-size: 2.5rem;
-    color: $primary-color;
-    padding: 0 0.5rem;
+    @include media-md {
+      text-align: left;
+      @include flex(column, center);
+      padding: 1rem 0;
+    }  
+
+    @include media-md {
+      @include flex(row, space-around);
+    }
   }
-}
 
-.footer__attribution {
-  border-top: 1px solid $neutral;
-  padding: 3rem 0;
-  text-align: center;
-}
+  &__contact {
+    padding: 2rem 0;
+    border-top: 1px solid $neutral;
+    border-bottom: 1px solid $neutral;
+    text-align: left;   
 
-footer a {
-  color: $neutral;
+    @include media-md {
+      border: none;      
+    }
+
+    ion-icon {
+      font-size: 2.5rem;
+      color: $primary-color;
+      padding: 0 0.5rem;
+    }
+  }
+
+  &__navlinks {
+    padding: 2rem 0;   
+
+    a {
+      color: $neutral-light;
+    }
+  }  
+
+  &__attribution {
+    border-top: 1px solid $neutral;
+    padding-top: 3rem;
+    text-align: center;
+  }
+
+  &__link {
+    color: $neutral;
+  }
 }
