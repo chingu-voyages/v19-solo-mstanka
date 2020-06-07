@@ -432,7 +432,6 @@ header {
 .about__intro {
   background: #fffffe;
   padding: 5rem 2rem;
-  margin-bottom: 5rem;
 }
 
 .about__services {
@@ -444,11 +443,17 @@ header {
   margin-bottom: 10rem;
 }
 
+.about__services ul {
+  padding-top: 2rem;
+}
+
 .about__services ul li {
   font-size: 2rem;
   font-weight: 700;
   list-style: square;
   list-style-position: inside;
+  text-transform: uppercase;
+  letter-spacing: .1em;
 }
 
 .about__cta {
@@ -468,7 +473,18 @@ header {
 
 .about__cta:hover {
   background: #fffffe;
-  color: #0f0e17;
+  color: #A63223;
+}
+
+.about__cta--main {
+  background: #fffffe;
+  color: #A63223;
+  margin-right: .5rem;
+}
+
+.about__cta--main:hover {
+  background: #A63223;
+  color: #fffffe;
 }
 
 .about__text {

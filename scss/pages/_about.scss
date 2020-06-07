@@ -1,9 +1,7 @@
 .about {
-
   &__intro {
     background: $neutral-light;
     padding: 5rem 2rem;
-    margin-bottom: 5rem;
   }
 
   &__services {
@@ -15,17 +13,19 @@
     margin-bottom: 10rem;
 
     ul {
+      padding-top: 2rem;
+
       li {
         font-size: 2rem;
         font-weight: 700;
         list-style: square;
         list-style-position: inside;
+        text-transform: uppercase;
+        letter-spacing: .1em;
       }
     }
-
-    
   }
-  
+
   &__cta {
     display: inline-block;
     padding: 1rem 2rem;
@@ -35,13 +35,24 @@
     border-radius: 5px;
     background: $primary-dark;
     color: $neutral-light;
-    text-transform: uppercase;    
+    text-transform: uppercase;
     cursor: pointer;
     @include transition(all);
 
     &:hover {
       background: $neutral-light;
-      color: $neutral-dark;
+      color: $primary-dark;
+    }
+
+    &--main {
+      background: $neutral-light;
+      color: $primary-dark;
+      margin-right: .5rem;
+
+      &:hover {
+        background: $primary-dark;
+        color: $neutral-light;
+      }
     }
   }
 
@@ -72,7 +83,6 @@
     @include media-lg {
       grid-template-columns: repeat(4, 1fr);
     }
-
   }
 
   &__card {
