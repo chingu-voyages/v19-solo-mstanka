@@ -70,7 +70,7 @@ p {
 .footer {
   background: #0f0e17;
   color: #fffffe;
-  padding: 4rem 1rem 1rem 1rem;
+  padding: 2rem 1rem 1rem 1rem;
   text-align: center;
   font-size: 1.3rem;
 }
@@ -80,10 +80,6 @@ p {
     margin-left: auto;
     width: 75%;
   }
-}
-
-.footer__title {
-  padding: 0 0.5rem;
 }
 
 .footer__nav {
@@ -129,7 +125,6 @@ p {
 
 .footer__contact {
   padding: 2rem 0;
-  border-top: 1px solid #6c6d79;
   border-bottom: 1px solid #6c6d79;
   text-align: left;
 }
@@ -147,7 +142,7 @@ p {
 }
 
 .footer__navlinks {
-  padding: 2rem 0;
+  padding: 1.5rem 0;
 }
 
 .footer__navlinks a {

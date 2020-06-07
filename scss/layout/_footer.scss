@@ -1,18 +1,14 @@
 .footer {
   background: $neutral-dark;
   color: $neutral-light;
-  padding: 4rem 1rem 1rem 1rem;
+  padding: 2rem 1rem 1rem 1rem;
   text-align: center;
   font-size: 1.3rem;
 
   @include media-lg {
     margin-left: auto;
     width: 75%;
-  }
-
-  &__title {
-    padding: 0 0.5rem;
-  }
+  } 
 
   &__nav {
     padding: 1rem 0;
@@ -30,7 +26,6 @@
 
   &__contact {
     padding: 2rem 0;
-    border-top: 1px solid $neutral;
     border-bottom: 1px solid $neutral;
     text-align: left;   
 
@@ -46,7 +41,7 @@
   }
 
   &__navlinks {
-    padding: 2rem 0;   
+    padding: 1.5rem 0;   
 
     a {
       color: $neutral-light;
