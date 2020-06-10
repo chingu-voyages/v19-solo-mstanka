@@ -2,7 +2,7 @@
 
 ## Voyage 19 Solo Project
 
-|| [Explore repo](https://github.com/chingu-voyages/v19-solo-mstanka) || [View demo](https://) ||
+|| [Explore repo](https://github.com/chingu-voyages/v19-solo-mstanka) || [View demo](https://chingu-voyages.github.io/v19-solo-mstanka/) ||
 
 ----
 
@@ -67,6 +67,6 @@ To get a local copy up and running follow these simple steps.
 
 ----
 
-Project Link [https://github.com/chingu-voyages/v19-solo-mstanka](https://)
+Project Link [https://github.com/chingu-voyages/v19-solo-mstanka](https://chingu-voyages.github.io/v19-solo-mstanka/)
 
 Find more about [Chingu](https://www.chingu.io/)
