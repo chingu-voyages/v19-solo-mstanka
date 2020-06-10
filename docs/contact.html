@@ -60,7 +60,7 @@
   </header>
 
   <!--*************Contact***************-->
-  <main class="main__container">
+  <main class="main__container contact">
     <!--*************Contact Intro***************-->
     <section id="contact" class="contact__intro">
       <h1 class="title">Contact Us</h1>
@@ -127,30 +127,39 @@
   </main>
 
   <!--*************Footer***************-->
-  <footer class="footer__container">
-    <h3>Feel Free to Contact Us!</h3>
+  <footer class="footer">
+    <div class="footer__nav">
+      <ul class="footer__contact">
+        <li>
+          <ion-icon name="location-outline"></ion-icon> 203 Fake St. Mountain View, Main City, Europe
+        </li>
+        <li>
+          <ion-icon name="mail-outline"></ion-icon> info@captured.com
+        </li>
+        <li>
+          <ion-icon name="call-outline"></ion-icon> +123 456 789
+        </li>
+      </ul>
+      
+      <ul class="footer__navlinks">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./gallery.html">Gallery</a></li>
+      </ul>
 
-    <ul class="footer__contact">
-      <li>
-        <ion-icon name="location-outline"></ion-icon> 203 Fake St. Mountain View, Main City, Europe
-      </li>
-      <li>
-        <ion-icon name="mail-outline"></ion-icon> info@captured.com
-      </li>
-      <li>
-        <ion-icon name="call-outline"></ion-icon> +123 456 789
-      </li>
-    </ul>
-
+      <ul class="footer__navlinks">
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Cookies</a></li>
+        <li><a href="#">Terms</a></li>
+      </ul>
+    </div>
+   
     <div class="footer__attribution">
       <p>Copyright &copy 2020 All rights reserved</p>
       <p>Coded with <ion-icon name="heart"></ion-icon> by <a href="https://github.com/mstanka" target="_blank"
-          rel="noreferrer noopener">mstanka </a>for <a href="https://www.chingu.io/" target="_blank"
-          rel="noreferrer noopener">Chingu</a></p>
-      <p>Icon of camera made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a
-          href="https://www.flaticon.com/" rel="noreferrer noopener" title="Flaticon">www.flaticon.com</a></p>
+          rel="noreferrer noopener" class="footer__link">mstanka </a>for <a href="https://www.chingu.io/" target="_blank" rel="noreferrer noopener" class="footer__link">Chingu</a></p>
+      <p>Icon of camera made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik" class="footer__link">Freepik.</a> Images from <a href="https://unsplash.com/" class="footer__link">Unsplash</a></p>
     </div>
-
   </footer>
 
   <script src="./js/main.js"></script>
