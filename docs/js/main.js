@@ -64,6 +64,8 @@ function showError(input, errMessage) {
   let formInput = input.parentElement;
   let msgError = formInput.querySelector(".form__msg-error");
   let iconError = formInput.querySelector(".form__icon-error");
+  input.classList.remove("form__input-success");
+  input.classList.add('form__input-error');
   msgError.style.visibility = "visible";
   msgError.innerText = errMessage;
   iconError.style.visibility = "visible";
@@ -73,6 +75,8 @@ function removeError(input) {
   let formInput = input.parentElement;
   let msgError = formInput.querySelector(".form__msg-error");
   let iconError = formInput.querySelector(".form__icon-error");
+  input.classList.remove("form__input-error");
+  input.classList.add("form__input-success");
   msgError.style.visibility = "hidden";
   iconError.style.visibility = "hidden";
 }

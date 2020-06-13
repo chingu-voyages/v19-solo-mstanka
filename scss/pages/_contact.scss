@@ -70,20 +70,27 @@
     padding-bottom: 2.5rem;
     width: 100%;
 
-    input,
-    textarea {
+    .input {
       display: block;
       width: 100%;
       padding: 1rem;
       font: inherit;
       outline: none;
       border-radius: 0.5rem;
-      border: 1px solid $primary-dark;
-
+      border: 1px solid $neutral-dark;
+     
       &:focus {
-        border: 2px solid $primary-dark;
+        outline: 2px solid $primary-dark;
       }
     }
+  }
+
+  .form__input-error {
+    outline: 3px solid $primary-dark;
+  }
+
+  .form__input-success {
+    outline: 3px solid $success-color;
   }
 
   &__icon-error {
