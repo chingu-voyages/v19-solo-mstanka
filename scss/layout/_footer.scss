@@ -47,9 +47,15 @@
     border-top: 1px solid $neutral;
     padding-top: 3rem;
     text-align: center;
+    line-height: 1;
+
+    ion-icon {
+      font-size: 1.2rem;
+      color: $primary-color;      
+    }
   }
 
   &__link {
-    color: $neutral;
+    color: $primary-color;
   }
 }

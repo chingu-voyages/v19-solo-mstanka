@@ -134,10 +134,16 @@ p {
   border-top: 1px solid #6c6d79;
   padding-top: 3rem;
   text-align: center;
+  line-height: 1;
+}
+
+.footer__attribution ion-icon {
+  font-size: 1.2rem;
+  color: #f25f4c;
 }
 
 .footer__link {
-  color: #6c6d79;
+  color: #f25f4c;
 }
 
 .main__container {
