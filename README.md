@@ -1,4 +1,4 @@
-# v19-solo-mstanka
+# Photography Studio landing page
 
 ## Voyage 19 Solo Project
 
@@ -67,6 +67,6 @@ To get a local copy up and running follow these simple steps.
 
 ----
 
-Project Link [https://github.com/chingu-voyages/v19-solo-mstanka](https://chingu-voyages.github.io/v19-solo-mstanka/)
+Project Link [https://github.com/chingu-voyages/v19-solo-mstanka](https://github.com/chingu-voyages/v19-solo-mstanka)
 
 Find more about [Chingu](https://www.chingu.io/)
