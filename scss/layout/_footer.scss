@@ -15,11 +15,6 @@
 
     @include media-md {
       text-align: left;
-      @include flex(column, center);
-      padding: 1rem 0;
-    }  
-
-    @include media-md {
       @include flex(row, space-around);
     }
   }
